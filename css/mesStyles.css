@@ -200,3 +200,10 @@ section {
 section:nth-of-type(even) {
   background : lightgrey; 
 }
+
+section:nth-of-type(even) {
+  background : rgba(211, 211, 211, 1); 
+}
+section:nth-of-type(odd) {
+  background : rgba(255, 255, 255, 1); 
+}
