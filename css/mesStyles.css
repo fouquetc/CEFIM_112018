@@ -43,6 +43,7 @@ nav {
     display: inline-block;
     float: right;
     font-family: Raleway-ExtraBold, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
     font-size: 12px;
     text-transform: uppercase;
     text-align: center;
