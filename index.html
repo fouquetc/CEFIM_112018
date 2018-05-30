@@ -4,6 +4,7 @@
             <meta charset="UTF-8"/>
             <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">          
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">         
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
@@ -26,35 +27,51 @@
                     </ul>
                     <i class="fas fa-home"></i>
                 </nav>
+                <img class="img_intro" src="img/background1.jpg" alt="image_background">            
+
             </header>
-            <img class="img_intro" src="img/background1.jpg" alt="image_background">            
             <!-- BEGIN Intro -->
-            <section id="whoAmI">
-                <p> Bonjour, bienvenu(e) sur cette page et merci de prendre 
-                    quelques minutes de votre temps pour me lire !</br>
-                    Je m'appelle Cyril FOUQUET, j'ai 46 ans. Après un cursus 
-                    scolaire scientifique puis informatique, j'ai intégré  
-                    l'administration à l'issue d'une formation interne de 
-                    18 mois.Le poste que j'occupe depuis m'a permis de capitaliser 
-                    plus de 20 années d'expérience à différentes fonctions 
-                    et dans plusieurs domaines d'activités touchant à 
-                    l'informatique.</br>
-                    Pour plus de détails concernant mon cursus de formation, 
-                    mes parcours et expérience professionnels, mes centres 
-                    d'intérêts mais aussi et surtout le projet qui porte ma 
-                    candidature à la formation de développeur proposée par le 
-                    CEFIM, je vous invite à naviguer parmi les éléments qui 
-                    suivent.</br>
-                    Bonne lecture !</br>
-                <div id="quote">
-                    Put the best quote ever here !! 
-                    <a href="http://anti-deprime.com/2015/04/12/40-citations-pour-booster-votre-motivation-3/">Citations</a>
+            <div id="intro" class="intro">
+                <div class="intro_content" id="intro_content_left"> 
+                    <div id="photo" class="rubrique">
+                        <img src="./img/Cyril.png" class="photo" alt"Photo Cyril">
+                    </div>
+                    <div class="profil">
+                        <div id="twitter"><a href="https://twitter.com/dogos36"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+                        <div id="facebook"><a href="https://www.facebook.com/cyril.fouquet.186"><i class="fab fa-linkedin fa-2x"></i></a></div>
+                        <div id="linkedin"><a href="https://www.linkedin.com/in/cyril-fouquet-712783a1/"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                        <div id="viadeo"><a href="http://fr.viadeo.com/fr/profile/cyril.fouquet1"><i class="fab fa-viadeo-square fa-2x"></i></a></div>
+                    </div>
+                </div>                    
+                <div class="intro_content" id="intro_content_right">
+                    <div id="intro_quote" class="intro_quote rubrique">
+                        <span class="intro_quote"><i class="fas fa-quote-left"></i> The only source of knowledge is experience <i class="fas fa-quote-right"></i></span>
+                        <br>
+                        <span id="author">- Albert Einstein -</span>
+                        <hr>
+                    </div>            
+                    <div class="txt_intro rubrique">
+                        <p>
+                            Bonjour, bienvenu(e) sur cette page et merci de prendre quelques minutes de votre temps pour me lire !
+                        </p>
+                        <p>Je suis Cyril FOUQUET. J'ai 46 ans. Après un cursus scolaire scientifique et informatique, j'ai intégré  
+                            l'administration à l'issue d'une formation interne de 18 mois.Le poste que j'occupe depuis m'a permis de capitaliser 
+                            plus de 20 années d'expérience à différentes fonctions et dans plusieurs domaines d'activités touchant à l'informatique.
+                        </p>
+                        <p>
+                            Pour plus de détails concernant mon parcours, mes centres d'intérêts mais aussi et surtout le projet qui porte ma 
+                            candidature à la formation de développeur du CEFIM, je vous invite à naviguer parmi les éléments qui suivent.
+                        </p>
+                        <p>
+                            Bonne lecture !
+                        </p>
+                    </div>   
                 </div>
-            </section>
+            </div>
             <!-- END Intro -->        
             <!-- BEGIN Formation et parcours professionnel -->
-            <h2>Parcours professionnel</h2>
             <section id="educationAndBackground">
+                <h2>Parcours professionnel</h2>
                 <div class="timeline">
                     <!--BEGIN Bac-->
                     <div class="education">
@@ -212,7 +229,7 @@
                 </div>
             </section>
             <!-- END  Formation et parcours professionnel -->
-           <!-- BEGIN Realisations -->            
+            <!-- BEGIN Realisations -->            
             <section id="mainAchievements">
                 <h2>Principales réalisations</h2>
                     Conduite  du  projet  et  mise  en  œuvre  d’infrastructures  virtuelles 
