@@ -14,52 +14,78 @@
   transition: all 0.3s;
 }
 
-/* DEBUT INTRO*/
+/* BEGIN INTRO*/
 .intro {
-    position:absolute;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    width:60%;
-    top:20%;
-    left:20%;
-    justify-content: center;
+    width:50%;
+    top:100px;
+    left:25%;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgba(255, 255, 255, 1);
-    background: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    background: rgba(75, 70, 70, 0.95) ;
 }
 
-/*.intro .rubrique {
-    border-color: rgb(255,255,255);
-    border-style: solid;
-}*/
-
-.intro > div {
-    padding: 5px;
+.intro * {
+    box-sizing: border-box;
 }
 
 .photo {
-    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
 }
 
-.intro > div:nth-child(2) {
+.intro_content {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-
 }
 
-.quote, .profil {
-    font-size: 20px;
+.intro_content > div {
+    height: 100%;
+    width: 100%;
+    padding:20px;
+    align-items: center;
+}
+
+.intro_quote {
+    font-size: 28px;
+    font-family: 'Anton', sans-serif;
+    /*font-family: 'Dancing Script', cursive;*/
+    text-align: center; 
+    height: 50%;
+}
+
+.intro_quote #author{
+    font-family: 'Dancing Script', cursive;
 }
 
 .txt_intro {
     font-size: 16px;
+    text-align: justify;
 }
 
-/* FIN INTRO*/
+.profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profil div {
+    margin:auto;
+}
+.profil a {
+    color: rgb(255, 255, 255);
+}
+
+.profil a:hover {
+    color: rgb(65, 105, 225);
+}
+
+/* END INTRO*/
 
 /* BEGIN NAVIGATION */
 nav {
@@ -90,7 +116,7 @@ nav {
 }
 
 .navItem:hover {
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 body, html {
@@ -136,11 +162,6 @@ section:nth-of-type(odd) {
 }
 
 
-
-
-
-
-
 /*  BEGIN TIMELINE */
 .timeline {
   position:relative;
@@ -180,7 +201,7 @@ section:nth-of-type(odd) {
     width:10px;
     height:10px;
     border-radius:50%;
-    color: rgb(0,0,128);
+    color: rgb(65, 105, 225);
 }
 .date:after {
   content:attr(data-date);
