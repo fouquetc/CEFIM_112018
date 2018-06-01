@@ -26,9 +26,8 @@
   } 
   
   h2 {
-    /*font-family: 'Anton', sans-serif;*/
-    font-family: Raleway-ExtraBold, Verdana, Geneva, Tahoma, sans-serif;      
-    font-size: 22px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
   }
