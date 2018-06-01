@@ -8,70 +8,85 @@
             <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-            <link rel="stylesheet" href="./css/mesStyles.css">
+            <link rel="stylesheet" href="./css/mesStyles6.css">
             <title>Cyril FOUQUET</title>
         </head>
         <body>
-            <header>
-                <nav>
-                    <img class="logo" src="./img/cefim.png" alt="Logo CEFIM"/>
-                    <ul class="navMenu">
-                        <li class="navItem">Liens et ressources</li>
-                        <li class="navItem">Centres d'intérêt</li>
-                        <li class="navItem">Projet</li>                        
-                        <li class="navItem">Compétences</li>
-                        <li class="navItem">Activités</li>                        
-                        <li class="navItem">Réalisations</li>                        
-                        <li class="navItem">Parcours</li>
-                        <li class="navItem"><i class="fas fa-home"></i></li>
-                    </ul>
-                    <i class="fas fa-home"></i>
-                </nav>
-                <img class="img_intro" src="img/background1.jpg" alt="image_background">            
-
-            </header>
+            <div class="parallax" id="home">
             <!-- BEGIN Intro -->
-            <div id="intro" class="intro">
-                <div class="intro_content" id="intro_content_left"> 
-                    <div id="photo" class="rubrique">
-                        <img src="./img/Cyril.png" class="photo" alt"Photo Cyril">
+            <div class="intro_frame" id="intro">
+                <div class="intro">
+                    <div class="intro_content" id="intro_content_left">
+                        <div id="photo" class="rubrique">
+                            <img src="./img/Cyril.png" class="photo" alt "Photo Cyril">
+                        </div>
+                        <div class="profil">
+                            <div id="twitter">
+                                <a href="https://twitter.com/dogos36">
+                                    <i class="fab fa-twitter-square fa-2x"></i>
+                                </a>
+                            </div>
+                            <div id="facebook">
+                                <a href="https://www.facebook.com/cyril.fouquet.186">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </div>
+                            <div id="linkedin">
+                                <a href="https://www.linkedin.com/in/cyril-fouquet-712783a1/">
+                                    <i class="fab fa-facebook-square fa-2x"></i>
+                                </a>
+                            </div>
+                            <div id="viadeo">
+                                <a href="http://fr.viadeo.com/fr/profile/cyril.fouquet1">
+                                    <i class="fab fa-viadeo-square fa-2x"></i>
+                                </a>
+                            </div>
+                            <div id="github">
+                                <a href="https://github.com/fouquetc" target="_blank"
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="profil">
-                        <div id="twitter"><a href="https://twitter.com/dogos36"><i class="fab fa-twitter-square fa-2x"></i></a></div>
-                        <div id="facebook"><a href="https://www.facebook.com/cyril.fouquet.186"><i class="fab fa-linkedin fa-2x"></i></a></div>
-                        <div id="linkedin"><a href="https://www.linkedin.com/in/cyril-fouquet-712783a1/"><i class="fab fa-facebook-square fa-2x"></i></a></div>
-                        <div id="viadeo"><a href="http://fr.viadeo.com/fr/profile/cyril.fouquet1"><i class="fab fa-viadeo-square fa-2x"></i></a></div>
+                    <div class="intro_content" id="intro_content_right">
+                        <div id="intro_quote" class="intro_quote rubrique">
+                            <span class="intro_quote">
+                                <i class="fas fa-quote-left"></i> The only source of knowledge is experience
+                                <i class="fas fa-quote-right"></i>
+                            </span>
+                            <br>
+                            <span id="author">- Albert Einstein -</span>
+                            <hr>
+                        </div>
+                        <div class="txt_intro rubrique">
+                            <p>
+                                Bonjour, bienvenu(e) sur cette page et merci de prendre quelques minutes de votre temps pour me lire !
+                            </p>
+                            <p>Je suis Cyril FOUQUET. J'ai 46 ans. Après un cursus scolaire scientifique et informatique, j'ai intégré l'administration
+                                à l'issue d'une formation interne de 18 mois.Le poste que j'occupe depuis m'a permis de capitaliser plus
+                                de 20 années d'expérience à différentes fonctions et dans plusieurs domaines d'activités touchant à l'informatique.
+                            </p>
+                            <p>
+                                Pour plus de détails concernant mon parcours, mes centres d'intérêts mais aussi et surtout le projet qui porte ma candidature
+                                à la formation de développeur du CEFIM, je vous invite à naviguer parmi les éléments qui suivent.
+                            </p>
+                            <p>
+                                Bonne lecture !
+                            </p>
+                        </div>
                     </div>
-                </div>                    
-                <div class="intro_content" id="intro_content_right">
-                    <div id="intro_quote" class="intro_quote rubrique">
-                        <span class="intro_quote"><i class="fas fa-quote-left"></i> The only source of knowledge is experience <i class="fas fa-quote-right"></i></span>
-                        <br>
-                        <span id="author">- Albert Einstein -</span>
-                        <hr>
-                    </div>            
-                    <div class="txt_intro rubrique">
-                        <p>
-                            Bonjour, bienvenu(e) sur cette page et merci de prendre quelques minutes de votre temps pour me lire !
-                        </p>
-                        <p>Je suis Cyril FOUQUET. J'ai 46 ans. Après un cursus scolaire scientifique et informatique, j'ai intégré  
-                            l'administration à l'issue d'une formation interne de 18 mois.Le poste que j'occupe depuis m'a permis de capitaliser 
-                            plus de 20 années d'expérience à différentes fonctions et dans plusieurs domaines d'activités touchant à l'informatique.
-                        </p>
-                        <p>
-                            Pour plus de détails concernant mon parcours, mes centres d'intérêts mais aussi et surtout le projet qui porte ma 
-                            candidature à la formation de développeur du CEFIM, je vous invite à naviguer parmi les éléments qui suivent.
-                        </p>
-                        <p>
-                            Bonne lecture !
-                        </p>
-                    </div>   
+                </div>
+                <div class="intro">
+                    <a href="#educationAndBackground" class="arrow_next">
+                    <i class="fas fa-chevron-down fa-4x"></i>
+                    </a>
                 </div>
             </div>
-            <!-- END Intro -->        
+            <!-- END Intro -->
+            </div>
             <!-- BEGIN Formation et parcours professionnel -->
             <section id="educationAndBackground">
-                <h2>Parcours professionnel</h2>
+                <h2 class="section_title">Parcours professionnel</h2>
                 <div class="timeline">
                     <!--BEGIN Bac-->
                     <div class="education">
@@ -227,11 +242,14 @@
                     </div>
                     <!-- END PoleSysteme -->
                 </div>
+                <div class="arrow_next">
+                        <a href="#mainAchievements"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
             </section>
             <!-- END  Formation et parcours professionnel -->
             <!-- BEGIN Realisations -->            
             <section id="mainAchievements">
-                <h2>Principales réalisations</h2>
+                <h2 class="section_title">Principales réalisations</h2>
                     Conduite  du  projet  et  mise  en  œuvre  d’infrastructures  virtuelles 
                     vSphere,  Hyper-V  et  RDS:  étude  de  marché/état  de  l’art,  conception, 
                     planification,   approvisionnement,  mise  en  service,  configuration  et 
@@ -272,11 +290,14 @@
                     Développement  ponctuel  d'applications/sites  Web:  Elections 
                     Chambre  d'agriculture,  Agents  immobiliers,  statistiques   horaires  des 
                     agents
-            </section>
+                <div class="arrow_next">
+                    <a href="#mainActivities"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
+                </section>
             <!-- END  Realisations --> 
             <!-- BEGIN Activites --> 
             <section id="mainActivities">
-                    <h2>Expériences/compétences</h2>
+                    <h2 class="section_title">Expériences/compétences</h2>
                     Conduite d'opérations et de projets techniques.
                     Gestion  du  parc matériel et logiciel : veille technologique, définition/étude 
                     des  besoins,  études  techniques  et  configurations,  approvisionnement, 
@@ -293,11 +314,14 @@
                     services utilisateurs.
                     Elaboration/formalisation  de  normes  internes,  de  procédures, 
                     documentation technique
+                <div class="arrow_next">
+                    <a href="#technicalSkills"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
             </section>
             <!-- END Activites --> 
             <!-- BEGIN Competences -->
             <section id="technicalSkills">
-                <h2>Environnements techniques</h2>
+                <h2 class="section_title">Environnements techniques</h2>
                         Environnement serveurs
                         Windows Server 2003/2008/2012, 
                         Active Directory, WSUS,WPP
@@ -324,23 +348,29 @@
                         Divers
                         <p>2012 - Certification ITIL V3 Foundation</p>                       
                         Anglais technique
-            </section>
+                    <div class="arrow_next">
+                        <a href="#hobbies"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                    </div>
+            
+                </section>
             <!-- END Competences -->
  
             <!-- BEGIN Hobbies -->
-            <section id="interests">
-                <h2>Centres d'intérêt</h2>
+            <section id="hobbies">
+                <h2 class="section_title">Centres d'intérêt</h2>
                     Musique
                     Course à pied/randonnée
                     Lecture
                     Ciné
                     Voile (passion naissante)
                     Moto (passion naissante, également)
-
-            </section>
+                <div class="arrow_next">
+                    <a href="#myProject"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
+                </section>
             <!-- BEGIN Projet -->
             <section id="myProject">
-                <h2>Mon projet professionnel</h2>
+                <h2 class="section_title">Mon projet professionnel</h2>
                 Ma formation J'ai eu l'opportunité de développer quelques applications en début de carrière mais ai été contraint d'abandonner cette activité pour
                 prendre d'autres fonctions. 
                 La formation proposée par le CEFIM constituerait le point de départ d'une reconversion professionnelle. Plusieurs facteurs sont à l'origine de ce projet :
@@ -351,25 +381,57 @@
                 sont  progressivement transférées vers d'autres structures. Le poste que j'occupe actuellement est donc progressivement vidé de tout ce qui faisait le rendait attrayant et enrichissant
                 </ul>
                                 toute possibilité d'enrichissement des connaissances,
-             </section>
+                <div class="arrow_next">
+                    <a href="#whyDev"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
+            </section>
             <!-- BEGIN Choix métier --> 
             <section id="whyDev">
-                <h2>Why "Dev" ?</h2> 
+                <h2 class="section_title">Why "Dev" ?</h2> 
                 C'est une sorte de retour aux sources (du code ?... ). J'ai eu l'occasion de développer il y a de nombreuses années. J'ai été contraint (déjà) pour des raisons d'organisations de renoncer à ces activités. 
                 Mais le recueil des besoins,  la conception  de base de données, d'interfaces utilisateurs, le développement sont des activités que je trouve particulièrement enrichissantes 
-
+                <div class="arrow_next">
+                    <a href="#whyCEFIM"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
             </section>
             <!-- BEGIN Choix CEFIM -->
             <section id="whyCEFIM">
-                <h2>Why "CEFIM" ?</h2>
+                <h2 class="section_title">Why "CEFIM" ?</h2>
+                <div class="arrow_next">
+                    <a href="#whyMe"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
             </section>
             <!-- BEGIN Choix Moi -->
             <section id="whyMe">
-                <h2>Why "me"  ?</h2>
+                <h2 class="section_title">Why me  ?</h2>
+                <div class="arrow_next">
+                    <a href="#linksAndRefs"><i class="fas fa-chevron-down fa-4x"></i></i></a>        
+                </div>
             </section>
             <footer>
-                <section id="linksAndRefs">
+                <section id="linksAndRefs">ssdfsdfsdf
                 </section>
             </footer>
+            <div class="home_arrow">
+                    <a href="#home"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
+            </div>                                             
+            <nav>
+                <div class="menu_root">
+                    <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                    <div class="menuItem">
+                        <a href="#home">Accueil</li>
+                        <a href="#educationAndBackground">Parcours</li>
+                        <a href="#mainAchievements">Réalisations</li>
+                        <a href="#mainActivities">Activités</li>
+                        <a href="#technicalSkills">Compétences</li>
+                        <a href="#myProject">Projet</li>
+                        <a href="#hobbies">Centres d'intérêt</li>
+                        <a href="#linksAndRefs">Liens et ressources</li>
+                    </div>
+                </div>
+                <div class="home">
+                    <a href="#home"><i class="fas fa-home fa-2x"></i></a>                          
+                </div>
+          </nav>
         </body>
     </html>
