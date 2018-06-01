@@ -210,7 +210,8 @@
   /* END INTRO*/
   
   section:nth-of-type(even) {
-    background :rgba(169,169,169,0.5); 
+    /*background :rgba(169,169,169,0.5);*/
+    background: rgb(75, 70, 70) ;      
   }
   
   section:nth-of-type(even)  .arrow_next a  {
