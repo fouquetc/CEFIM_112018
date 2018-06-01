@@ -21,7 +21,7 @@
   
   section {
     padding: 20px 150px 20px 150px;
-    color:rgb(48,48,48);
+    color:rgb(255,255,255);
     text-align: justify;
     position: relative;
   } 
@@ -55,7 +55,7 @@
     position:fixed;
     bottom:0;
     right:0;
-    color: rgb(65, 105, 225);
+    color: rgb(0, 0, 255);
     padding-bottom: 10px;
     padding-right: 10px;
   
@@ -86,7 +86,7 @@
 
 .home i, .menu_root i {
     /*color:rgb(0,64,255);*/
-    color: rgb(75, 70, 70) ;    
+    color: rgb(0, 0, 0) ;    
 }
 
 .menuItem {
@@ -100,7 +100,7 @@
     display: block;
     text-decoration: none;
     /*color:rgb(0,0,255);*/
-    color: rgb(75, 70, 70) ;    
+    color: rgb(0, 0, 0) ;    
     font-family: Raleway-ExtraBold, Verdana, Geneva, Tahoma, sans-serif;
     font-weight:bold;
     font-size: 14px;
@@ -210,7 +210,7 @@
   /* END INTRO*/
   
   section:nth-of-type(even) {
-    background :rgb(169,169,169);      
+    background :rgb(255,255,255);
   }
   
   section:nth-of-type(even)  .arrow_next a  {
@@ -219,12 +219,12 @@
   
   section:nth-of-type(odd) {
     /*background : rgb(0, 0, 0); */
-    color : rgb(169,169,169);
+    color : rgb(255,255,255);
     background: rgb(75, 70, 70);
   }
   
   section:nth-of-type(odd)  .arrow_next a {
-    color : rgb(169,169,169);
+    color : rgb(255,255,255);
   }
   /*  BEGIN TIMELINE */
   .timeline {
@@ -321,7 +321,7 @@
     position:absolute;
     padding:5px;
     background: rgb(169,169,169);
-    box-shadow: 0 4px 8px 0 rgba(0,32,255, 0.2), 0 6px 20px 0 rgba(0,32,255, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
     border-radius:5px;
     left:auto;
     width:calc(100% / 6);
