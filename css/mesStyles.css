@@ -210,8 +210,7 @@
   /* END INTRO*/
   
   section:nth-of-type(even) {
-    /*background :rgba(169,169,169,0.5);*/
-    background: rgb(75, 70, 70) ;      
+    background :rgb(169,169,169);      
   }
   
   section:nth-of-type(even)  .arrow_next a  {
@@ -219,8 +218,9 @@
   }
   
   section:nth-of-type(odd) {
-    background : rgb(0, 0, 0); 
+    /*background : rgb(0, 0, 0); */
     color : rgb(169,169,169);
+    background: rgb(75, 70, 70);
   }
   
   section:nth-of-type(odd)  .arrow_next a {
