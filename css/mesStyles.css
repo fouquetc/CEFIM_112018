@@ -224,7 +224,6 @@
   
   section:nth-of-type(odd)  .arrow_next a {
     color : rgb(255,255,255);
-    color:rgb(0,0,0);      
   }
   /*  BEGIN TIMELINE */
   .timeline {
