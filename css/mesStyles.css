@@ -206,7 +206,7 @@ nav {
 /* END INTRO*/
 
 section:nth-of-type(even) {
-  background :rgba(255,255,255 0.6);
+  background :rgba(255,255,255 0.1);
 }
 
 section:nth-of-type(even)  .arrow_next a  {
