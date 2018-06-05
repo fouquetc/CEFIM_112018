@@ -27,7 +27,7 @@ section {
     text-align: justify;
     position: relative;
 } 
-  
+
 h2 {
     font-family: 'Anton', sans-serif;
     font-size: 28px;
@@ -45,9 +45,7 @@ h2 {
     margin-right: auto;
     color:rgb(255, 255, 255);
     text-align: center; 
-    align-items: center;
-    align-content: center;
-    align-self: center;
+
 }
   
 .home_arrow {
@@ -221,7 +219,7 @@ section:nth-of-type(odd)  .arrow_next a {
     color : rgb(255,255,255);
 }
 
-/*  BEGIN TIMELINE */
+/*  BEGIN BACKGROUND TIMELINE */
 .timeline {
     position:relative;
     display: flex;
@@ -329,8 +327,9 @@ section:nth-of-type(odd)  .arrow_next a {
     color:rgb(0,64,255);
 }
   
-/* END TIMELINE */
-  
+/* END BACKGROUND TIMELINE */
+
+/* BEGIN ACHIEVEMENTS  */
 .achievementsContainer {
     display: flex;
     flex-direction: row;
@@ -340,7 +339,7 @@ section:nth-of-type(odd)  .arrow_next a {
 .achievements {
     position: relative;
     width:33%;
-    height:100%;
+    height:auto;
     margin: 10px;
     padding : 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
@@ -349,17 +348,62 @@ section:nth-of-type(odd)  .arrow_next a {
 
 .achievements ul {
     list-style-type:none;
-    display: block; 
+    display: inline; 
 }
 
-#mainAchievements .Title::before {
-    font-family: FontAwesome;
-    content: "\f14a";
-    color:rgb(0,64,255);
-    display: inline;
+.achievements .title {
+    list-style-type:none;
+    display: inline-block; 
 }
+
+.achievements .Title::before {
+    font-family: FontAwesome;
+    color:rgb(0,64,255);
+    display: inline-block;
+    padding-right:5px;
+}
+
+.achievements li:hover .Title {
+    color:rgb(0,64,255);
+    font-weight:bold;
+    transition: 0s;
+}
+
+.achievements li:hover .Detail {
+    display: inline-block;
+}
+
+.achievements .achievement .Title::before {
+    content: "\f058";
+}
+
+.achievements .activity .Title::before {
+    content: "\f164";
+}
+
+.achievements .skill .Title::before {
+    content: "\f0ad";
+}
+
 .achievements .Detail {
     display:none;
 }
-  
+
+#achievementDetails {
+    border-style: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.arrow_down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(0,64,255);;
+    display:inline-block;
+
+}
+
+/* END ACHIEVEMENTS  */
   
