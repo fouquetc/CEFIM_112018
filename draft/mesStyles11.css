@@ -1,4 +1,4 @@
-﻿/* BEGIN POLICIES  */
+﻿﻿/* BEGIN POLICIES  */
 
 @font-face {
     font-family: 'Raleway-ExtraBold';
@@ -201,21 +201,21 @@ nav {
   
 /* END INTRO*/
   
-section:nth-of-type(even) {
+section:nth-of-type(odd) {
     background :rgba(255,255,255 0.1);
 }
   
-section:nth-of-type(even)  .arrow_next a  {
+section:nth-of-type(odd)  .arrow_next a  {
     color: rgba(0, 0, 0,0.6);
 }
   
-section:nth-of-type(odd) {
+section:nth-of-type(even) {
     /*background : rgb(0, 0, 0); */
     color : rgb(255,255,255);
     background: rgb(75, 70, 70);
 }
   
-section:nth-of-type(odd)  .arrow_next a {
+section:nth-of-type(even)  .arrow_next a {
     color : rgb(255,255,255);
 }
 
@@ -393,7 +393,8 @@ section:nth-of-type(odd)  .arrow_next a {
     margin : 0 10px 0 10px;
     padding: 0;
     height:100%;
-    display:none;
+    display: none;
+    left:100%;
 }
 
 #achievementDetails #Title {
