@@ -1,0 +1,26 @@
+Ma candidature à la formation de développeur Web au CEFIM s'incrit dans un projet personnel de reconversion professionnelle. Le poste que j'occupe depuis plus de 20 ans a été totalement transformé depuis l'origine, au fil des réorganisations mais essentiellement en raison de l'évolution rapide et permanente des technologies. Il m'a permis d'exercer plusieurs métiers, de connaître des expériences riches et diversifiées et de capitaliser une expérience importante. Mais depuis quelques années, la rationalisation et la mutualisation des moyens informatiques entraînent une externalisation progressive des infrastructures (regroupement de datacenters, cloud privé) et une nécessaire réorganisation des fonctions d'administration et de conception d'architecture que j'exerce actuellement. La rupture technologique que représente le cloud dans la mise en oeuvre et l'administration des infrastructures impactent également en profondeur ces fonctions.
+
+Les politiques internes de gestion des compétences et de formation n'ont pas encore pris la mesure de cette rupture et n'offrent aucun accompagnement vers les métiers émergents de la transformation numérique remplaçant progressivement les métiers "traditionnels" comme celui que j'exerce.
+Je travaille sur ce projet personnel de reconversion depuis de nombreux mois. J'avais initialement identifié deux axes : une évolution vers le métier d'administrateur cloud et une reconversion vers le développement logiciel. L'un comme l'autre nécessite une forte montée en compétence, un effort et une courbe d'apprentissage élevés. 
+
+Mon choix s'est rapidement porté sur le développement pour plusieurs et raisons : 
+il s'agit d'une sorte de retour aux sources, à l'activité à laquelle j'avais initialement choisi d'être formé et que j'ai particulièrement apprécié pendant la trop courte période durant laquelle j'ai eu la possibilité de l'exercer 
+s'ils ont longtemps souffert d'une mauvaise image, de faibles perspectives d'emploi et dévolution, la tendance s'est inveré depuis quelques années. Actuellement, les opportunités d'emploi sont abondantes, les activités et technologies abordées, profils et types d'employeurs sont multiples. Le code est omniprésent, incontournable, l'aprentissage est accessible, les ressources se multiplient, le code est enseigné même aux plus jeunes et est devenu une activité ludique autant qu'un métier. 
+Le développement c'est : un état d'esprit, des communautés énormes et actives, une multitude d'outils accessibles, des possibilités d'auto-formation et pour évoluer 
+Caractériser : relever des défis et trouver des solutions, être réatif/inventif, ouvert, un travail en groupes/équipes/communautés pour apprendre, progresser, s'améliorer, évoluer, faire de la veille, produire un résultat concret , fournir un service pour répondre à des besoins, , concevoir, tester, réaliser, tester, déployer, corriger, améliorer 
+
+
+CEFIM : 
+implanté depuis plus de 15 ans, ayant formé des milliers de stagiaires
+acteur incontournable du monde  numérique local (voire plus), présent et impliqué dans tous les événements
+état d'esprit, une équipe personnellement impliquée et partie prenante dans la réussite de l'école (SCOOP) 
+des retours très positifs (participation en tant que jury, retours d'anciens stagiaires) 
+un solide réseau d'entreprises et de partenaires pour l'accueil et l'emploi des stagiaires
+des formateurs issus du monde professionnel
+
+MOI :
+le développement n'est pas un domaine inconnu. Même s'il a beaucoup évolué, certains concepts, pratiques restent d'actualité (analyse, conception de bases de données/SQL, algorithmique et concepts des langages (variables et typages, structures conditionnelles/de répétition, tableaux, instructions/fonctions...) 
+expérience des formations longues, qui sont à mon sens indispensables tout au long de la vie pour actualiser, mettre à niveau ou faire évoluer ses connaissances et compétences 
+expérience professionnelle du travail en équipe
+curiosité, goût pour la veille, souhait d'apprendre et de progresser 
+motivation très importante : travail sur ce projet de reconversion/formation depuis près de 4 ans (interrompu pour raisons personnelles), disposé à financer la formation, en tout ou partie,  sur fonds personnels (si absence d'autres possibilités) 
