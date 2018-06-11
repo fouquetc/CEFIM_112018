@@ -53,14 +53,14 @@ nav {
     left:0;
 }  
   
-.home, .menu_root {
+.music, .menu_root {
     display:inline-block;
     height:auto;
     padding : 10px 10px;
 
 } 
   
-.home {
+.music {
     float: right;    
 }
   
