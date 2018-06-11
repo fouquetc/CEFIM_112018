@@ -61,7 +61,8 @@ nav {
 } 
   
 .music {
-    float: right;    
+  float: right;
+  background-color:transparent;  
 }
   
 .menu_root {
