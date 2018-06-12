@@ -5,7 +5,7 @@ $(document).ready(function(){
     $(".achievements li").click(function(){
         if (!($("#achievementDetails").is(':visible'))) {
             $("#achievementDetails").show("fast");
-        } s
+        }
         myClass = $(this).children("div:first").attr("class");
         if (myClass!=myPreviousClass) {
             switch(myClass) {
