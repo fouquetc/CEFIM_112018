@@ -413,7 +413,8 @@ section:nth-of-type(odd)  .arrow_next a {
 
 
 .skill .Detail li::before{
-    content: "\f0a3";
+    /*content: "\f0a3";*/
+    content: "*";
 }
 
 .arrow_down {
