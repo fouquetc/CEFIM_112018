@@ -32,8 +32,4 @@ $(document).ready(function(){
 
     }); 
 
-    var audioPlayer = document.getElementById("audioPlayer");
-    audioPlayer.onplay = function() {   
-        audioPlayer.volume = 0.5;
-    }
 });
