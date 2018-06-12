@@ -381,10 +381,6 @@ section:nth-of-type(odd)  .arrow_next a {
     content: "\f164";
 }
 
-.achievements .skill .Detail li::before{
-    content: "\f0a3";
-}
-
 .achievements .skill .Title::before {
     content: "\f0ad";
 }
@@ -413,6 +409,11 @@ section:nth-of-type(odd)  .arrow_next a {
 #achievementDetails #Detail {
     text-align: justify;
     line-height: 1em;
+}
+
+
+#achievementDetails #Detail li::before{
+    content: "\f0a3";
 }
 
 .arrow_down {
