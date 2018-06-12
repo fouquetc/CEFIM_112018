@@ -382,7 +382,7 @@ section:nth-of-type(odd)  .arrow_next a {
 }
 
 .achievements .skill .Detail li::before{
-    content: "f0a3";
+    content: "\f0a3";
 }
 
 .achievements .skill .Title::before {
