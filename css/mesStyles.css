@@ -387,7 +387,6 @@ section:nth-of-type(odd)  .arrow_next a {
 
 .achievements .skill .Detail::before {
     color:rgb(0,128,255);
-    display: inline-block;
     padding: 0 5px 0 5px ;
     content: "\f005"; 
 }
