@@ -413,6 +413,7 @@ section:nth-of-type(odd)  .arrow_next a {
 
 
 #achievementDetails #Detail li::before{
+    font-family: FontAwesome;
     content: "\f0a3";
 }
 
