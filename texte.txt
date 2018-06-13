@@ -1,3 +1,5 @@
+Projet
+
 Ma candidature à la formation de développeur Web au CEFIM s'incrit dans un projet personnel de reconversion professionnelle. Le poste que j'occupe depuis plus de 20 ans a été totalement transformé depuis l'origine, au fil des réorganisations mais essentiellement en raison de l'évolution rapide et permanente des technologies. Il m'a permis d'exercer plusieurs métiers, de connaître des expériences riches et diversifiées et de capitaliser une expérience importante. Mais depuis quelques années, la rationalisation et la mutualisation des moyens informatiques entraînent une externalisation progressive des infrastructures (regroupement de datacenters, cloud privé) et une nécessaire réorganisation des fonctions d'administration et de conception d'architecture que j'exerce actuellement. La rupture technologique que représente le cloud dans la mise en oeuvre et l'administration des infrastructures impactent également en profondeur ces fonctions.
 
 Les politiques internes de gestion des compétences et de formation n'ont pas encore pris la mesure de cette rupture et n'offrent aucun accompagnement vers les métiers émergents de la transformation numérique remplaçant progressivement les métiers "traditionnels" comme celui que j'exerce.
@@ -24,3 +26,22 @@ expérience des formations longues, qui sont à mon sens indispensables tout au 
 expérience professionnelle du travail en équipe
 curiosité, goût pour la veille, souhait d'apprendre et de progresser 
 motivation très importante : travail sur ce projet de reconversion/formation depuis près de 4 ans (interrompu pour raisons personnelles), disposé à financer la formation, en tout ou partie,  sur fonds personnels (si absence d'autres possibilités) 
+
+
+
+Hobbies
+<div class="hobbiesContainer">
+    <ul class="hobbiesList">
+        <li>Musique : styles variés, pratique de la guitare</li>
+        <li>Moto</li>
+        <li>Sport : running/trail, voile, randonnée</li>
+        <li>Voyages : Quebec, Espagne, Baléares, Tenerife, Rome, Venise, Portugal, Angleterre, Belgique, Pays-Bas, Luxembourg, Corse...</li>
+        <li>Littérature et cinéma : polars, thrillers, romans et films historiques, (auto-)biographies, science-fiction... 
+            <ul>
+                <li>Auteurs favoris : James Ellroy, I. Aasimov, N. Spinrad, RJ Ellory, Saint Exupéry B. Werber, R. Bradbury, S. King, J. Irving...
+                <li>Réalisateurs favoris : C. Nolan, X. Dolan, Alejandro González Iñárritu, Paul Haggis, David Lynch, David Fincher, Terrence Malick,  Joel et Ethan Coen, Jeff Nichols, Denis Villeneuve, Christopher Nolan...</li>
+            </ul>
+        </li>
+        <li>Centres d'intérêts : sciences, environnement/écologie, psychologie//neurosciences, développement personnel, géopolitique, bricolage, jardinage</li>
+    </ul>
+</div>
