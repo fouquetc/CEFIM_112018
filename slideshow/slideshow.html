@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <script src="./js/slideshow.js"></script>
+    <title>Cyril FOUQUET</title>
+</head>
+
+<body>
+    <div class="slideshowContainer">
+        <div class="imageContainer">
+            <div class="slideshowImage">
+                <img src="./img/vai.jpg">
+                <div class="imageCategory">
+                    Musique
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/vai.jpg">
+                <div class="imageCategory">
+                    Musique
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/DucatiMonster696.jpg">
+                <div class="imageCategory">
+                    Moto
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/10kmTours2016.jpg">
+                <div class="imageCategory">
+                    Sports
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/First31.7.jpg">
+                <div class="imageCategory">
+                    Sports
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/ImocaPortLaForet.jpg">
+                <div class="imageCategory">
+                    Sports
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=Jx-NZRItFYY">
+                </iframe>
+                <div class="imageCategory">
+                    Sports
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/PortoTram.jpg">
+                <div class="imageCategory">
+                    Voyages
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/LaBelleProvince.JPG">
+                <div class="imageCategory">
+                    Voyages
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/JamesEllroyCover.jpg">
+                <div class="imageCategory">
+                    Lecture
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=hlMKBJQnTsM">
+                </iframe>
+                <div class="imageCategory">
+                    Cinéma
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/LittleFamily.jpg">
+                <div class="imageCategory">
+                    Famille et amis
+                </div>
+            </div>
+            <div class="slideshowImage">
+                <img src="./img/FriendsAfterParty.jpg">
+                <div class="imageCategory">
+                    Famille et amis
+                </div>
+            </div>
+        </div>
+        <!-- Boutons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Description de l'image  -->
+        <div class="descriptionContainer">
+            <p id="description"></p>
+        </div>
+    
+        <div class="slideshowRow">
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/vai.jpg" onclick="currentSlide(1)" alt="Steve Vai">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/DucatiMonster696.jpg" onclick="currentSlide(2)" alt="Ducati Monster 696">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/10kmTours2016.jpg" onclick="currentSlide(3)" alt="Départ des 10kms de Tours - édition 2016">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/First31.7.jpg" onclick="currentSlide(4)" alt="Benneteau First 31.7 - sortie Club CCE37 - Port Crouesty">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/ImocaPortLaForet.jpg" onclick="currentSlide(5)" alt="Imoca en préparation à Port-La-Forêt">
+            </div>
+            <div class="slideShowCol">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=Jx-NZRItFYY" onclick="currentSlide(6)" alt="Randonnée L'île vierge - Crozon- Morgat vers le cap de la chèvre -sentier côtier">
+                </iframe>
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/PortoTram.jpg" onclick="currentSlide(7)" alt="Tramway de Porto">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/LaBelleProvince.JPG" onclick="currentSlide(8)" alt="Québec - le château Frontenac">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/JamesEllroyCover.jpg" onclick="currentSlide(9" alt="James Ellroy - American Tabloïd">
+            </div>
+            <div class="slideShowCol">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=hlMKBJQnTsM" onclick="currentSlide(10)" alt="Blade Runner - Riddley Scott (le test de Rachel)">
+                </iframe>
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/LittleFamily.jpg" onclick="currentSlide(11)" alt="La petite famille">
+            </div>
+            <div class="slideShowCol">
+                <img class="slideshowThumbnail" src="./img/FriendsAfterParty.jpg" onclick="currentSlide(12)" alt="Après une soirée entre amis (ok, on avait un peu abusé cette fois...)">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
