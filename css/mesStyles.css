@@ -413,7 +413,7 @@ section:nth-of-type(odd)  .arrow_next a {
 
 #achievementDetails #Detail li::before {
     font-family: FontAwesome;
-    color:rgb(0,128,255);
+    color:rgba(0,128,255,0.3);
     padding: 0 5px 0 5px ;
     content: "\f005"; 
 }
