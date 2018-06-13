@@ -385,6 +385,11 @@ section:nth-of-type(odd)  .arrow_next a {
     content: "\f0ad";
 }
 
+.achievements .skill .Detail::before {
+    content: "\f0a3"; 
+}
+
+
 .achievements .Detail {
     display:none;
 }
@@ -409,12 +414,6 @@ section:nth-of-type(odd)  .arrow_next a {
 #achievementDetails #Detail {
     text-align: justify;
     line-height: 1em;
-}
-
-
-#achievementDetails #Detail li::before{
-    font-family: FontAwesome;
-    content: "\f0a3";
 }
 
 .arrow_down {
