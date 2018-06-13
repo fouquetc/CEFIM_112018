@@ -356,7 +356,7 @@ section:nth-of-type(odd)  .arrow_next a {
     display: inline-block; 
 }
 
-.achievements .Title::before {
+.achievements .Title::before, .achievements .skill .Detail::before {
     font-family: FontAwesome;
     color:rgb(0,128,255);
     display: inline-block;
@@ -386,7 +386,7 @@ section:nth-of-type(odd)  .arrow_next a {
 }
 
 .achievements .skill .Detail::before {
-    content: "\f0a3"; 
+    content: "\f005"; 
 }
 
 
