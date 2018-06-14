@@ -1,8 +1,10 @@
 ﻿/* BEGIN  GENERAL STYLES */
 
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 * {
-  font-family: 'Dosis', sans-serif;
-  font-size: 18px;
+  font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
   transition: all 0.3s;
 }
   
@@ -330,18 +332,18 @@ section:nth-of-type(odd)  .arrow_next a {
 /* END BACKGROUND TIMELINE */
 
 /* BEGIN ACHIEVEMENTS  */
-.achievementsContainer, .projectContainer {
+.achievementsContainer, .projectContainer, .hobbiesContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
   
-.achievements, .projectSubject {
+.achievements, .projectSubject, .hobbies {
     position: relative;
     width:33%;
     height:auto;
     margin: 10px;
-    padding : 10px;
+    padding : 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
     border-radius:5px;
 }
@@ -437,4 +439,121 @@ section:nth-of-type(odd)  .arrow_next a {
 }
 
 /* END ACHIEVEMENTS  */
+
+/* BEGIN PROJECT */
+
+.projectDescription  {
+    margin: 0 10px 0 10px; 
+}
+
+/* END PROJECT */
+.projectSubject ul, .hobbies ul {
+    display: inline-block;
+    padding-left: 10px; 
+}
+
+/* BEGIN HOBBIES */
+
+.hobbies {
+    width:50%;
+}
+
+#hobbiesSlideshow {
+    min-width: 500px;
+}
+
+/* BEGIN  SLIDESHOW */
+
+.slideshowContainer * {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px; 
+    display: flex;
+
+  }
+
+.slideshowContainer {
+    position: relative;
+    width:100%;
+    min-width: 500px;
+    max-width : 1000px;
+}
+
+.slideshowImage {
+    display: none;
+}
+
+.slideshowImage > img{
+    width:100%;
+    height: 500px;
+    object-fit: fill;
+}    
+
   
+.slideshowThumbnail {
+    cursor: pointer;
+    opacity: 0.6;
+    width:100%;
+    height:100%;
+}
+  
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.imageCategory {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.descriptionContainer {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.slideshowRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.slideShowCol {
+    float: left;
+    width: 10%; 
+    height:100px;
+}
+  
+.active, .slideshowThumbnail:hover {
+    opacity: 1;
+}
+
+/* END  SLIDESHOW */
+
+/* END HOBBIES */
