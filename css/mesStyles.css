@@ -481,6 +481,7 @@ section:nth-of-type(odd)  .arrow_next a {
 
 .slideshowImage {
     display: none;
+    z-index: 1000;
 }
 
 .slideshowImage > img{
@@ -522,20 +523,27 @@ section:nth-of-type(odd)  .arrow_next a {
 }
   
 .imageCategory {
-    color: #f2f2f2;
+    color: rgb(0,0,0);
     font-size: 12px;
+    font-weight: bold;
     padding: 8px 12px;
+    background-color: rgba(255,255,255,0.8) ; 
     position: absolute;
-    top: 0;
+    top : 0;
 }
 
 .descriptionContainer {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
-    color: white;
+}   
+
+#imageDescription {
+    color:white;
+    font-size:12px;
+    text-align: left;
 }
-  
+
 .slideshowRow:after {
     content: "";
     display: table;
@@ -547,8 +555,6 @@ section:nth-of-type(odd)  .arrow_next a {
     width: 10%; 
     height:50px;
 }
-
-
   
 .active, .slideshowThumbnail:hover {
     opacity: 1;
