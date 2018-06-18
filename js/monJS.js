@@ -45,30 +45,30 @@ $(document).ready(function(){
 
   // Boutons Next/previous
   function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
   }
 
   // Gestion des Thumbnails 
   function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
   }
 
   function showSlides(n) {
-  var i;
-  var slides = $(".slideshowImage");
-  var dots = $(".slideshowThumbnail");
-  var captionText = $("description");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+    var i;
+    var images = $(".slideshowImage");
+    var thumbnails = $(".slideshowThumbnail");
+    if (n > images.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = images.length}
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    for (i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+    }
+    images[slideIndex-1].style.display = "block";
+    thumbnails[slideIndex-1].className += " active";
+    //$("#imgCategory").html(images[slideIndex-1].getElementsByClassName("imageCategory")[0].innerHTML);  
+    $("#imageDescription").html(thumbnails[slideIndex-1].alt);
   } 
 
   // END SLIDESHOW  
