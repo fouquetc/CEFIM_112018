@@ -282,7 +282,7 @@ section:nth-of-type(odd)  .arrow_next a {
 .education:hover .info {
     display:inline-block;
     top: 0%;
-    transform: translateX(50%);    
+    transform: translateX(-150%);    
 }
   
 .job:hover .info {
