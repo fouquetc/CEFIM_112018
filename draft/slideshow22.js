@@ -89,14 +89,14 @@ $(document).ready(function(){
       switch(myType) {
         case "image":
             $('#slideshowAudio').trigger("pause");
-            $('#slideshowVideo')[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            $("#slideshowVideo").attr("src", "");
             $("#slideshowImg").attr("src", thumbnails[slideIndex-1].src);
             $("#slideshowAudio").hide();
             $("#slideshowVideo").hide();
             $("#slideshowImg").show();
             break;
         case "audio":       
-            $('#slideshowVideo')[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            $("#slideshowVideo").attr("src", "");
             $("#slideshowImg").attr("src", thumbnails[slideIndex-1].src);
             $("#slideshowAudio").attr("src", thumbnails[slideIndex-1].getAttribute('data-audiosrc'));            
             $("#slideshowVideo").hide();
