@@ -584,7 +584,6 @@ section:nth-of-type(even)  .arrow_next a {
 }   
 
 #imageDescription {
-    color:rgb(255,255,255);
     font-size:12px;
     text-align: left;
 }
