@@ -11,7 +11,6 @@
     }
 
     // SLIDESHOW CONTENT MANAGEMENT 
-
     function showSlides(n) {
         var i;
         var thumbnails = $(".slideshowThumbnail");
@@ -27,7 +26,7 @@
         // TOGGLE BETWEEN
         switch(myType) {
             case "image":
-                $('#slideshowAudio').trigger("pause");
+                $("#slideshowAudio").trigger("pause");
                 $("#slideshowVideo").attr("src", "");
                 $("#slideshowImg").attr("src", thumbnails[slideIndex-1].src);
                 $("#slideshowAudio").hide();
@@ -43,7 +42,7 @@
                 $("#slideshowAudio").show();
                 break;
             case "video":
-                $('#slideshowAudio').trigger("pause");        
+                $("#slideshowAudio").trigger("pause");        
                 $("#slideshowVideo").attr("src", thumbnails[slideIndex-1].getAttribute('data-videosrc'));
                 $("#slideshowImg").hide();
                 $("#slideshowAudio").hide();
@@ -55,10 +54,6 @@
     } 
 
 // END SLIDESHOW ANIMATION FUNCTIONS
-
-
-
-
 
 $(document).ready(function(){
 
@@ -97,6 +92,19 @@ $(document).ready(function(){
 
 // END ACHIEVEMENTS DETAIL ANIMATION    
 
+// PROJECT SUBJECTS  MANAGEMENT 
+    $(".projectThumbnail").click(function(){
+        // HIDE ALL SUBJECTS AND SHOW THE CLICKED THUMB TARGET SUBJECT 
+        $(".projectSubject").hide();
+        $("" + $(this).attr('data-thumbTarget') +"").show();
+        // CHANGE THE THUMBNAIL CSS CLASS TO  HIGHLIGHT THE CLICKED ONE 
+        $(".projectThumbnail").removeClass("selProjectThumbnail");
+        $(this).addClass("selProjectThumbnail");
+
+    });
+
+// END PROJECT SUBJECTS  MANAGEMENT 
+
 //BEGIN LINKS LIST MANAGEMENT
     // FILTER LINKS LIST ACCORDING TO THE SELECTED CATEGORY 
     $("#linksCategoriesList").change(function(){
@@ -109,13 +117,15 @@ $(document).ready(function(){
                 $("#linksTable tr[data-category=\"" + $("#linksCategoriesList").val() + "\"]").show();                 
             }
         var rowIndex = 0;
-        $('#linksTable tr').each(function() {
+        $("#linksTable tr").each(function() {
             if ($(this).css("display")!=='none') {
                 if ((rowIndex % 2) !== 0) {
+                    $(this).removeClass("linkitem");
                     $(this).addClass("linkitemDark");
                 }
                 else  {
                     $(this).removeClass("linkitemDark");
+                    $(this).addClass("linkitem");
                 }
             rowIndex += 1;                                          
             }
