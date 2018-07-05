@@ -439,9 +439,7 @@ section:nth-of-type(even)  .arrow_next a {
     padding-left: 10px; 
     list-style-type: square;
 }
-/* END PROJECT */
 
-/* PROJECT V2 */
 .projectThumbnails {
     display:flex;
     flex-direction: row;
@@ -457,9 +455,7 @@ section:nth-of-type(even)  .arrow_next a {
     float:left;
     width:15%;
     margin:0;
-    border-color: rgba(45, 45, 45,0.1);
-    border-style:solid;
-    border-width:1px;
+    background-color: rgb(242, 242, 242);
     transition:0s;
 }
 
@@ -493,7 +489,7 @@ section:nth-of-type(even)  .arrow_next a {
     font-weight: bolder;
 }
 
-/*END PROJECT V2*/
+/*END PROJECT */
 
 /* BEGIN HOBBIES */
 .hobbies {
