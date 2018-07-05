@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/mesStyles.css">
-    <script src="./js/monJS.js"></script>
+    <link rel="stylesheet" href="./css/slideShow26.css">
+    <script src="./js/slideShow26.js"></script>
     <title>Cyril FOUQUET</title>
 </head>
 
@@ -513,101 +513,542 @@
             </div>
         </div>
         <div class="arrow_next" title="Cliquer pour accéder à la section suivante">
-            <a href="#projectDescription">
+            <a href="#project">
                 <i class="fas fa-chevron-down fa-4x">
                 </i>
             </a>
         </div>
     </section>
-    <!-- END Competences -->
+    <!-- END Competences -->  
     <!-- BEGIN Projet -->
-    <section id="project"> 
+    <section id="project">
+        <h2 class="section_title">Mon projet professionnel</h2>
+        <div class="projectThumbnails">
+            <div class="projectThumbnail selProjectThumbnail" id="thumbProjectDescription" data-thumbTarget="#projectDescription">
+                    Origine du projet
+            </div>
+            <div class="projectThumbnail" id="thumbwhyDev"  data-thumbTarget="#whyDev">
+                Pourquoi Dev ? 
+                </div>
+            <div class="projectThumbnail" id="thumbwhyCefim"  data-thumbTarget="#whyCEFIM">
+                Pourquoi le CEFIM ?
+            </div>
+            <div class="projectThumbnail" id="thumbwhyMe" data-thumbTarget="#whyMe">
+                Pourquoi moi ?
+            </div>
+        </div>
         <div class="projectContainer">
-            <div id="projectDescription" class="projectDescription">
-                <h2 class="section_title">Projet professionnel</h2>
+            <div class="projectSubject" id="projectDescription">
+                <!--<h2 class="section_title">Origine du projet</h2>-->
                 <p>Ma candidature à la formation de développeur Web au CEFIM s'incrit dans un projet personnel de reconversion professionnelle.</p>
                 <p>Le poste que j'occupe depuis plus de 20 ans a été totalement transformé depuis l'origine, au fil des réorganisations
-                    mais essentiellement en raison de l'évolution rapide et permanente des technologies. Il m'a permis d'exercer plusieurs
-                    métiers, de connaître des expériences riches et diversifiées et de capitaliser une expérience importante.<br>
-                    Mais depuis quelques années, la rationalisation et la mutualisation des moyens informatiques entraînent une externalisation
-                    progressive des infrastructures (regroupement de datacenters, cloud privé) et une nécessaire réorganisation des fonctions
-                    d'administration et de conception d'architecture que j'exerce actuellement. La rupture technologique que représente
-                    le cloud dans la mise en oeuvre et l'administration des infrastructures impacte profondément ces fonctions.</p>
-                    <p>Les politiques internes de mon employeur en matière de gestion des compétences et de formation n'ont pas encore pris
-                    la mesure de cette rupture et n'offrent quasiment aucun accompagnement (financement, ingénierie de formation...) vers
-                    les métiers émergents de la transformation numérique remplaçant progressivement les métiers "traditionnels" comme
-                    celui que j'exerce.<br>
-                    J'ai donc décidé, il y a de nombreux mois maintenant, de travailler sur un projet personnel de reconversion, après avoir initialement identifié deux
-                    axes  : une évolution vers le métier d'administrateur cloud et une reconversion vers le développement logiciel. L'un
-                    comme l'autre nécessite une forte montée en compétence, un effort et une courbe d'apprentissage élevés mais mon choix
-                    s'est rapidement porté sur le domaine du développement.</p>
-            </div>
-        </div>
-        <div class="projectContainer">
+                    mais essentiellement en raison de l'évolution rapide et permanente des technologies. Il m'a permis d'exercer
+                    plusieurs métiers, de connaître des expériences riches et diversifiées et de capitaliser une expérience importante.</p>
+                    <p> Mais depuis quelques années, la rationalisation et la mutualisation des moyens informatiques entraînent
+                    une externalisation progressive des infrastructures (regroupement de datacenters, cloud privé) et une nécessaire
+                    réorganisation des fonctions d'administration et de conception d'architecture que j'exerce actuellement.
+                    La rupture technologique que représente le cloud dans la mise en oeuvre et l'administration des infrastructures
+                    impacte profondément ces fonctions.</p>
+                <p>Le type de poste que j'occupe est progressivement et profondément transformé, dénaturé et vidé de toute activité à forte technicité ou valeur ajoutée,
+                    au profit de tâches administratives, d'exécution ou de gestion d'équipe.</p>
+                <p>Il n'est plus possible de maintenir et encore moins de faire évoluer les compétences et connaissances acquises
+                    au fil des années, faute de pouvoir les mettre en oeuvre et de pouvoir accéder à des dispositifs de formation/reconversion
+                    internes.
+                    <p>Les politiques de mon employeur en matière de gestion des compétences et de formation n'ont en effet pas
+                        pris la mesure de cette rupture et n'offrent quasiment aucun accompagnement (financement, ingénierie
+                        de formation...) ni offre de formation structurée vers les métiers émergents de la transformation numérique
+                        qui remplacent progressivement les métiers "traditionnels" comme celui que j'exerce.</p>
+                        <p> J'ai donc décidé, il y a de nombreux mois maintenant, de travailler sur un projet personnel de reconversion,
+                        après avoir initialement identifié deux axes : une évolution vers le métier d'administrateur cloud et
+                        une reconversion vers le développement logiciel. L'un comme l'autre nécessitant une forte montée en compétence,
+                        un effort et une courbe d'apprentissage élevés mais mon choix s'est rapidement porté sur le domaine du
+                        développement.</p>
+            </div>   
             <div class="projectSubject" id="whyDev">
-                <h2 class="section_title">Dev ?</h2>              
-                <ul>
-                    <li>C'est une sorte de retour aux sources, à l'activité à laquelle j'avais initialement choisi d'être formé et que
-                        j'ai eu beaucoup de plaisir à pratiquer durant la trop courte période pendant laquelle j'ai eu la possibilité de
-                        l'exercer.</li>
-                    <li>Les métiers du développement ont longtemps souffert d'une mauvaise image, offert de faibles perspectives d'emploi, de reconnaissance et d'évolution,
-                        la tendance s'est inversée depuis quelques années. Actuellement, les opportunités d'emploi sont abondantes, les activités
-                        et technologies abordées, les profils de postes et d'employeurs sont multiples.</li>
-                    <li>Le code est omniprésent dans tous les secteurs de l'économie, son aprentissage est accessible, les ressources se multiplient,
-                        le code est enseigné même aux plus jeunes, le développement est devenu une activité ludique en même temps qu'un métier.</li>
-                    <li>Le développement est un état d'esprit, un univers très attrayant parce que porteur d'un grand nombre des valeurs que j'apprécie 
-                        : curiosité, goût pour les technologies, les défis à relever, la résolution de problèmes, créativité, innovation,
-                        partage des connaissances et expériences, échanges et collaboration au sein d'équipes ou de communautés actives,
-                        intérêt pour découvrir, apprendre, progresser, évoluer...</li>
-                </ul>
+                <!--<h2 class="section_title">Dev ?</h2>-->
+                <p>C'est une sorte de retour aux sources, à l'activité à laquelle j'avais initialement choisi d'être formé et que
+                    j'ai eu beaucoup de plaisir à pratiquer durant la trop courte période pendant laquelle j'ai eu la possibipté
+                    de l'exercer.
+                </p>
+                <p>Les métiers du développement ont longtemps souffert d'une mauvaise image, offert de faibles perspectives d'emploi,
+                    de reconnaissance et d'évolution, la tendance s'est inversée depuis quelques années. Actuellement, les opportunités
+                    d'emploi sont abondantes, les activités et technologies abordées, les profils de postes et d'employeurs sont
+                    multiples, y compris dans le secteur public.
+                    <p>
+                    </p> Me concernant, la formation me donnerait accès aux offres disponibles en interne (par mobilité au sein des différentes administrations) ou dans le secteur privé,
+                     puisque je n'exclus pas cette option, si des opportunités se présentent.</p>
+                <p>Le code est omniprésent dans tous les secteurs de l'économie, son aprentissage est accessible, les ressources
+                    se multiplient, le code est enseigné même aux plus jeunes, le développement est devenu une activité ludique
+                    en même temps qu'un métier.</p>
+                <p>Mais surtout et avant tout, le développement est un état d'esprit, un univers extrêmement attrayant parce que
+                    porteur d'un grand nombre des valeurs que j'apprécie : curiosité, goût pour les technologies, les défis à
+                    relever, la résolution de problèmes, créativité, innovation, partage des connaissances et expériences, échanges
+                    et collaboration au sein d'équipes ou de communautés actives, intérêt pour découvrir, apprendre, progresser,
+                    évoluer...</p>
             </div>
             <div class="projectSubject" id="whyCEFIM">
-                <h2 class="section_title">CEFIM ?</h2>
-                <ul>
-                    <li>Le centre existe depuis plus de 15 ans et a formé des milliers de stagiaires</li>
-                    <li>Il est devenu un acteur incontournable du paysage numérique local (voire plus...), présent et impliqué dans tous les événements</li>
-                    <li>Tous les avis que j'ai pu recueillir (anciens stagiaires, entreprises partenaires ou employant d'anciens stagiaires)
-                        et mon propre retour d'expérience (participation ponctuelle en tant que membre de jury) sont excellents qu'il s'agisse :
-                        <ul>
-                            <li>du contenu et des méthodes pédagogiques</li>
-                            <li>du taux de réussite et de l'employabilité des stagiaires formés</li>
-                            <li>de l'accompagnement des stagiaires</li>
-                            <li>de l'état d'esprit, de la convivialité, de la cohésion, de la solidarité et du partage au sein des groupes de stagiaires mais aussi avec l'équipe du CEFIM</li>
-                        </ul>
-                        <li>Le centre a constitué un solide réseau d'entreprises et de partenaires pour l'accueil et l'emploi des stagiaires</li>
-                        <li>Les formateurs sont des professionnels au contact de la réalité, l'équipe du CEFIM est personnellement impliquée
-                            dans la réussie du centre (SCOOP)</li>
-                </ul>
+                <!--<h2 class="section_title">CEFIM ?</h2>-->
+                <p>Le centre existe depuis plus de 15 ans et a formé des milliers de stagiaires. Il est devenu un acteur incontournable du paysage numérique local (voire plus...), présent et impliqué dans tous
+                    les événements.</p>
+                <p>Tous les avis que j'ai pu recueillir (anciens stagiaires, entreprises partenaires ou employeurs d'anciens stagiaires)
+                    et mon propre retour d'expérience (participation ponctuelle en tant que membre de jury TSRIT) sont excellents à tous 
+                    points de vue  :
+                    <ul>
+                        <li>du contenu et des méthodes pédagogiques, le contenu étant défini en tenant compte des réalités du marché
+                            et de la demande des entreprises</li>
+                        <li>du taux de réussite et de l'employabilité des stagiaires formés</li>
+                        <li>de l'accompagnement des stagiaires</li>
+                        <li>de l'état d'esprit, de la convivialité, de la cohésion, de la solidarité et du partage au sein des groupes
+                            de stagiaires mais aussi avec l'équipe du CEFIM</li>
+                    </ul>
+                </p>
+                <p>Le centre a constitué un solide réseau d'entreprises et de partenaires pour l'accueil et l'emploi des stagiaires</p>
+                <p>Les formateurs sont des professionnels au contact de la réalité, l'équipe du CEFIM est particulièrement impliquée
+                    dans la réussite du centre et de ses stagiaires.</p>
+                <p>Il existe aujourd'hui de nombreuses possibilités de se former, notamment via des MOOC ou des formations en ligne.
+                    Mais la formule en alternance et présentiel à temps plein proposée par le CEFIM permet :
+                    <ul>
+                        <li>de se consacrer à plein temps  à l'apprentissage et à la pratique, sur des séquences longues, régulières et intensives : pas de cours suivi uniquement
+                            sur des séquences de temps libre courtes, morcelées, irrégulières, réalisées en plus d'une activité professionnelle ...</li>
+                        <li>de tirer profit des nombreux avantages que procurent l'apprentissage et le travail au sein d'un groupe : émulation,
+                            motivation et soutien collectifs, échanges, partages de connaissances et de pratiques, apprentissage du travail en équipe (contraintes, spécificités, outils et méthodes d'organisation...) 
+                    </ul>
+                </p>
             </div>
-            <div class="projectSubject" iad="whyMe">
-                <h2 class="section_title">... moi ?</h2>
-                <ul>
-                    <li>Le développement n'est pas une activité totalement inconnue pour moi. Même s'il a beaucoup évolué depuis, certains concepts restent applicables en tout ou partie (analyse, conception de bases de données, SQL, algorithmique et concepts des langages...</li> 
-                    <li>EN m'appuyant sur mon expérience de formations longues, e sais que je peux compter sur :
-                        <ul> 
-                            <li>mon aptitude à l'apprentissage et au travail en autonomie comme en groupe</li>   
-                            <li>une importante capacité de travail mobilisable sur de longues périodes</li>                                
-                            <li>ma curiosité, mon goût pour la veille, l'enrichissement continu des connaissances et compétences</li> 
-                        </ul>
-                    </li>
-                    <li>Ma motivation à intégrer et mener à son terme cette formation est d'autant plus importante que :
-                        <ul>
-                            <li>Je travaille à ce projet de reconversion/formation depuis maintenant près de 4 ans (malgré une mise en sommeil pour des raisons personnelles)</li>
-                            <li>Il s'agit d'un investissement personnel conséquent dans la mesure où je vais probablement devoir recourir à  un financement sur fonds personnel en tout ou partie (en l'absence d'autres possibilités) </li>
-                            <li>Il s'agit d'une importante remise en cause et d'une prise de risque quant à mon avenir et au reste de ma carrière professionelle, alors que je pourrais me satisfaire de ma situation actuelle, stable et confortable.</li>
-                        </ul>
-                </ul>
+            <div class="projectSubject" id="whyMe">
+                <!--<h2 class="section_title">... moi ?</h2>-->
+                <p>Le développement n'est pas une activité totalement inconnue pour moi. Même si le sujet a énormément évolué, certains
+                    connaissances et concepts restent applicables en tout ou partie (analyse, conception de bases de données, SQL, algorithmique
+                    et concepts des langages...</p>
+                <p>En m'appuyant sur mon expérience des formations longues suivies par le passé, je sais pouvoir compter sur :
+                    <ul>
+                        <li>mon aptitude à l'apprentissage et au travail en autonomie comme en groupe</li>
+                        <li>une importante capacité de travail mobilisable sur de longues périodes</li>
+                        <li>ma curiosité, mon goût pour la veille, l'enrichissement continu des connaissances et compétences</li>
+                    </ul>
+                </p>
+                <p>Ma motivation à intégrer et à mener à son terme cette formation est d'autant plus importante que :
+                    <ul>
+                        <li>je travaille à ce projet de reconversion/formation depuis maintenant près de 4 ans (même s'il a été mis en
+                            sommeil à deux reprises pour des raisons personnelles)</li>
+                        <li>ce projet implique un effort financier très important dans la mesure où les coûts de  formation seront très probablement 
+                            pris en charge en grande partie voire en totalité sur des  fonds personnel (en l'absence d'autres possibilités), sans même parler 
+                            de la baisse impro. </li>
+                        <li>il s'agit d'une remise en cause et d'une prise de risque importantes quant à mon avenir, au reste de
+                            ma carrière professionnelle, à une période de ma vie où je pourrais me satisfaire de la situation actuelle, stable
+                            et matériellement confortable.</li>
+                    </ul>
+                </p>
             </div>
         </div>
-        <div class="arrow_next" title="Cliquer pour accéder à la section suivante">
-            <a href="#hobbies">
+            <div class="arrow_next" title="Cliquer pour accéder à la section suivante">
+            <a href="#linksAndRefs">
                 <i class="fas fa-chevron-down fa-4x">
                 </i>
             </a>
         </div>
     </section>
-    <!-- END PROJECT-->    
-     <!-- BEGIN Hobbies -->
+        <!-- END PROJECT-->     
+
+     <!-- BEGIN links and refs  -->        
+     <section id="linksAndRefs">
+            <h2 class="section_title">Liens et ressources</h2>
+            <div class="linksContainer">
+                <div class="linksHeader">
+                        <p>Quelques sites favoris, classés par catégories :
+                        <select id="linksCategoriesList">
+                            <option value="*" selected>(tous)</option>
+                            <option value="Acteurs locaux du numérique">Acteurs locaux du numérique</option>
+                            <option value="Actualité et information">Actualité et information</option>
+                            <option value="IT – Actualité et veille">IT – Actualité et veille</option>
+                            <option value="IT – Développement">IT – Développement</option>
+                            <option value="IT – Généraliste">IT – Généraliste</option>
+                            <option value="IT – Logiciels">IT – Logiciels</option>
+                            <option value="IT – Organisation">IT – Organisation</option>
+                            <option value="IT – Sécurité">IT – Sécurité</option>
+                            <option value="IT – Systèmes">IT – Systèmes</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="linksHeader">
+                    <p>Sur Twitter</p>
+                </div>            
+            </div>
+            <div class="linksContainer">
+                <div class="links">
+                        <table id="linksTable">
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://www.01net.com" target="_blank" title="https://www.01net.com"> 01.Net</a>
+                                </td>
+                                <td>Actualité IT</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="http://www.100daysofcode.com" target="_blank" title="http://www.100daysofcode.com"> 100 Days of code</a>
+                                </td>
+                                <td>Communauté de développeurs</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="https://4sysops.com/" target="_blank" title="https://4sysops.com/"> 4SysOps</a>
+                                </td>
+                                <td>Communauté IT </td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="https://www.altaro.com" target="_blank" title="https://www.altaro.com"> Altaro</a>
+                                </td>
+                                <td>Blog, articles et ressources pour les technologies de virtualisation et de sauvegarde</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Sécurité">
+                                <td>
+                                    <a href="http://www.ssi.gouv.fr/" target="_blank" title="http://www.ssi.gouv.fr/"> ANSSI</a>
+                                </td>
+                                <td>Site de l'Agence nationale de la sécurité des systèmes d'information</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Sécurité">
+                                <td>
+                                    <a href="https://www.leblogduhacker.fr/" target="_blank" title="https://www.leblogduhacker.fr/"> Blog du hacker</a>
+                                </td>
+                                <td>Blog et ressources de hacking éthique</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://www.blogdumoderateur.com/" target="_blank" title="https://www.blogdumoderateur.com/"> Blog du modérateur</a>
+                                </td>
+                                <td>Le média des professionnels du digital</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Sécurité">
+                                <td>
+                                    <a href="https://www.cert.ssi.gouv.fr/" target="_blank" title="https://www.cert.ssi.gouv.fr/"> CERT-fr</a>
+                                </td>
+                                <td>Computer Emergency Response Team pour la France</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Sécurité">
+                                <td>
+                                    <a href="https://www.cnil.fr/" target="_blank" title="https://www.cnil.fr/"> CNIL</a>
+                                </td>
+                                <td>Commission nationale informatique et libertés</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://www.codecademy.com/fr/learn" target="_blank" title="https://www.codecademy.com/fr/learn"> CodeAcademy</a>
+                                </td>
+                                <td>MOOC et communauté de développeurs</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://codepen.io/cyril-fouquet/#" target="_blank" title="https://codepen.io/cyril-fouquet/#"> CodePen</a>
+                                </td>
+                                <td>Editeur en ligne et plateforme de partage de code </td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://www.coursera.org/" target="_blank" title="https://www.coursera.org/"> Coursera</a>
+                                </td>
+                                <td>MOOC</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="http://danstoncloud.com/fr/" target="_blank" title="http://danstoncloud.com/fr/"> Dans ton cloud</a>
+                                </td>
+                                <td>Communauté généraliste</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://developer.microsoft.com/fr-fr/" target="_blank" title="https://developer.microsoft.com/fr-fr/">
+                                        Developer.microsoft.com</a>
+                                </td>
+                                <td>Portail et communauté dédiés aux technologies de développement Microsoft</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://developer.mozilla.org/fr/" target="_blank" title="https://developer.mozilla.org/fr/"> Developer.mozilla.org</a>
+                                </td>
+                                <td>Resources et cours pour le développement par la fondation Mozilla</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://www.developpez.com/" target="_blank" title="https://www.developpez.com/"> Developpez.com</a>
+                                </td>
+                                <td>Communauté de développeurs</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="http://www.edugeek.net/" target="_blank" title="http://www.edugeek.net/"> EduGeek</a>
+                                </td>
+                                <td>Communauté généraliste IT</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Acteurs locaux du numérique">
+                                <td>
+                                    <a href="https://lehq.co/tours/" target="_blank" title="https://lehq.co/tours/">Le HQ Tours</a>
+                                </td>
+                                <td> Espace de coworking, formation et événementiel</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://www.experts-exchange.com/" target="_blank" title="https://www.experts-exchange.com/"> Experts-Exchange</a>
+                                </td>
+                                <td>Communauté IT généraliste</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://www.forum-microsoft.org/" target="_blank" title="https://www.forum-microsoft.org/"> Forums-Microsoft</a>
+                                </td>
+                                <td>Communauté de développeurs</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://www.freecodecamp.org/" target="_blank" title="https://www.freecodecamp.org/"> FreeCodeCamp</a>
+                                </td>
+                                <td>MOOC</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Acteurs locaux du numérique">
+                                <td>
+                                    <a href="https://frenchtech-loirevalley.com/" target="_blank" title="https://frenchtech-loirevalley.com/"> French Tech Loire Valley</a>
+                                </td>
+                                <td>La communauté de tous ceux qui font le numérique dans le Val de Loire. </td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="http://www.futura-sciences.com/" target="_blank" title="http://www.futura-sciences.com/"> Futura Sciences</a>
+                                </td>
+                                <td>Futura-Sciences.com - Actualités</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="http://indepnet.net/" target="_blank" title="http://indepnet.net/"> Indepnet</a>
+                                </td>
+                                <td>Association à but non lucratif dont l’objet est de promouvoir et démocratiser l’Internet contributif
+                                    et non marchand.
+                                </td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://www.lemonde.fr/international/rss_full.xml" target="_blank" title="https://www.lemonde.fr/international/rss_full.xml">
+                                        International - LeMonde.fr</a>
+                                </td>
+                                <td>International - LeMonde.fr</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://www.it-connect.fr/" target="_blank" title="https://www.it-connect.fr/"> IT-Connect</a>
+                                </td>
+                                <td>Plate-forme de cours sur l’administration systèmes et réseau pour les professionnels de l’informatique</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Organisation">
+                                <td>
+                                    <a href="http://www.itilfrance.com/" target="_blank" title="http://www.itilfrance.com/"> ITIL France</a>
+                                </td>
+                                <td>Site francophone et gratuit sur l'ITSM</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://www.journaldunet.com/" target="_blank" title="https://www.journaldunet.com/"> Journal Du Net</a>
+                                </td>
+                                <td>Site d'information économique</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://korben.info/" target="_blank" title="https://korben.info/"> Korben</a>
+                                </td>
+                                <td>Actualité, veille et communauté IT</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Acteurs locaux du numérique">
+                                <td>
+                                    <a href="https://paloaltours.org/" target="_blank" title="https://paloaltours.org/">PaloAltours</a>
+                                </td>
+                                <td> La communauté de l'innovation numérique en Touraine</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://www.supinfo.com/laboratoires" target="_blank" title="https://www.supinfo.com/laboratoires"> Laboratoires SupInfo</a>
+                                </td>
+                                <td>Laboratoires (projets, forums, communautés) des étudiants de SupInfo</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://www.lemonde.fr/rss/une.xml" target="_blank" title="https://www.lemonde.fr/rss/une.xml"> Le Monde.fr : A la une</a>
+                                </td>
+                                <td>Le Monde.fr : A la une</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://msdn.microsoft.com/fr-fr/" target="_blank" title="https://msdn.microsoft.com/fr-fr/"> MDSN</a>
+                                </td>
+                                <td>Portail et communauté dédiés aux technologies de développement Microsoft</td>
+                            </tr>
+                            <tr class="linkitem" edata-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://openclassrooms.com" target="_blank" title="https://openclassrooms.com"> OpenClassroom</a>
+                                </td>
+                                <td>MOOC et communauté IT</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://www.pcreview.co.uk/" target="_blank" title="https://www.pcreview.co.uk/"> PC Review</a>
+                                </td>
+                                <td>Site d'actualité IT généraliste</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://www.lemonde.fr/planete/rss_full.xml" target="_blank" title="https://www.lemonde.fr/planete/rss_full.xml">
+                                        Planète - LeMonde.fr</a>
+                                </td>
+                                <td>Planète - LeMonde.fr</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="http://powershell-scripting.com/index.php" target="_blank" title="http://powershell-scripting.com/index.php">
+                                        Powershell-scripting.com</a>
+                                </td>
+                                <td>Site/communauté dédié à Powershell</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://slate.com/" target="_blank" title="https://slate.com/"> Slate.com</a>
+                                </td>
+                                <td>Site d'information généraliste</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="http://www.slate.fr/" target="_blank" title="http://www.slate.fr/"> Slate.fr</a>
+                                </td>
+                                <td>Site d'information généraliste</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://www.sololearn.com/Profile/8880332#_=_" target="_blank" title="https://www.sololearn.com/Profile/8880332#_=_">
+                                        SoloLearn</a>
+                                </td>
+                                <td>MOOC</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Logiciels">
+                                <td>
+                                    <a href="https://sourceforge.net/" target="_blank" title="https://sourceforge.net/"> Sourceforge.net</a>
+                                </td>
+                                <td>Forge de projets OpenSource</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://community.spiceworks.com/" target="_blank" title="https://community.spiceworks.com/"> Spiceworks</a>
+                                </td>
+                                <td>Communauté IT </td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://stackexchange.com/sites#" target="_blank" title="https://stackexchange.com/sites#"> StackExchange</a>
+                                </td>
+                                <td>Portail de sites et communautés (IT et autres thèmes) </td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://stackoverflow.com/" target="_blank" title="https://stackoverflow.com/"> StackOverflow</a>
+                                </td>
+                                <td>Communauté de développeurs</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://support.microsoft.com" target="_blank" title="https://support.microsoft.com"> Support Microsoft</a>
+                                </td>
+                                <td>Base de connaissance Microsoft</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="https://www.synergeek.fr/" target="_blank" title="https://www.synergeek.fr/"> SynerGeek</a>
+                                </td>
+                                <td>Actualités et veille IT</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="https://technet.microsoft.com/fr-fr/sysinternals" target="_blank" title="https://technet.microsoft.com/fr-fr/sysinternals">
+                                        SysInternals</a>
+                                </td>
+                                <td>Outils et utilitaires systèmes</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://technet.microsoft.com/" target="_blank" title="https://technet.microsoft.com/"> Technet</a>
+                                </td>
+                                <td>Portail des technologie Microsoft</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://www.techno-science.net/" target="_blank" title="https://www.techno-science.net/"> Techno-Science.net</a>
+                                </td>
+                                <td>Techno-Science.net - Actualité des sciences et des techniques</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://www.lemonde.fr/technologies/rss_full.xml" target="_blank" title="https://www.lemonde.fr/technologies/rss_full.xml">
+                                        Technologies - LeMonde.fr</a>
+                                </td>
+                                <td>Technologies - LeMonde.fr</td>
+                            </tr>
+                            <tr class="linkitem" data-category="Actualité et information">
+                                <td>
+                                    <a href="https://www.ted.com/talks?language=fr" target="_blank" title="https://www.ted.com/talks?language=fr"> TEDx</a>
+                                </td>
+                                <td>Talks et prospective pluridisciplinaires</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Actualité et veille">
+                                <td>
+                                    <a href="https://www.toolinux.com/" target="_blank" title="https://www.toolinux.com/"> TooLinux</a>
+                                </td>
+                                <td> L'actualité de Linux, des logiciels libres et de l'interopérabilité en langue française, depuis mars
+                                    2000.</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Organisation">
+                                <td>
+                                    <a href="https://trello.com/fouquetc" target="_blank" title="https://trello.com/fouquetc"> Trello</a>
+                                </td>
+                                <td>Outil de suivi de projets et de travail en équipe</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="http://tryalgo.org/" target="_blank" title="http://tryalgo.org/"> TryAlgo</a>
+                                </td>
+                                <td>Résolution de problèmes algorithmiques</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Systèmes">
+                                <td>
+                                    <a href="http://vmblog.com/home.aspx" target="_blank" title="http://vmblog.com/home.aspx"> VMBlog</a>
+                                </td>
+                                <td>Information et actualités sur les technologies de virtualisation</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Généraliste">
+                                <td>
+                                    <a href="https://communities.vmware.com/welcome" target="_blank" title="https://communities.vmware.com/welcome">
+                                        VMWare Communities</a>
+                                </td>
+                                <td>Communauté VMWare</td>
+                            </tr>
+                            <tr class="linkitem" data-category="IT – Développement">
+                                <td>
+                                    <a href="https://www.w3schools.com/" target="_blank" title="https://www.w3schools.com/"> W3Schools</a>
+                                </td>
+                                <td>MOOC</td>
+                            </tr>
+        
+                        </table>
+    
+                </div>
+                <div class="links">
+                    <a class="twitter-timeline" data-lang="fr" data-height="500" href="https://twitter.com/dogos36/lists/veille-it?ref_src=twsrc%5Etfw">A Twitter List by dogos36</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </div>
+            </div>
+            <div class="arrow_next" title="Cliquer pour accéder à la section suivante">
+                <a href="#hobbies">
+                    <i class="fas fa-chevron-down fa-4x">
+                    </i>
+                </a>
+            </div>        
+        </section>
+         <!-- END links and refs  -->        
+
+
+        <!-- BEGIN Hobbies -->
      <section id="hobbies">
         <h2 class="section_title">Hobbies</h2>
         <div class="hobbiesContainer">
@@ -694,404 +1135,9 @@
                 </div>
             </div>  
         </div>
-        <div class="arrow_next" title="Cliquer pour accéder à la section suivante">
-            <a href="#linksAndRefs">
-                <i class="fas fa-chevron-down fa-4x">
-                </i>
-            </a>
-        </div>
     </section>
         <!-- END Hobbies -->
     <footer>
-    <section id="linksAndRefs">
-        <h2 class="section_title">Liens et ressources</h2>
-        <div class="linksContainer">
-            <div class="linksHeader">
-                    <p>Quelques sites favoris par catégories :
-                    <select id="linksCategoriesList">
-                        <option value="*" selected>(tous)</option>
-                        <option value="Acteurs locaux du numérique">Acteurs locaux du numérique</option>
-                        <option value="Actualité et information">Actualité et information</option>
-                        <option value="IT – Actualité et veille">IT – Actualité et veille</option>
-                        <option value="IT – Développement">IT – Développement</option>
-                        <option value="IT – Généraliste">IT – Généraliste</option>
-                        <option value="IT – Logiciels">IT – Logiciels</option>
-                        <option value="IT – Organisation">IT – Organisation</option>
-                        <option value="IT – Sécurité">IT – Sécurité</option>
-                        <option value="IT – Systèmes">IT – Systèmes</option>
-                    </select>
-                </p>
-            </div>
-            <div class="linksHeader">
-                <p>Sur Twitter</p>
-            </div>            
-        </div>
-        <div class="linksContainer">
-            <div class="links">
-                    <table id="linksTable">
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://www.01net.com" target="_blank" title="https://www.01net.com"> 01.Net</a>
-                            </td>
-                            <td>Actualité IT</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="http://www.100daysofcode.com" target="_blank" title="http://www.100daysofcode.com"> 100 Days of code</a>
-                            </td>
-                            <td>Communauté de développeurs</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="https://4sysops.com/" target="_blank" title="https://4sysops.com/"> 4SysOps</a>
-                            </td>
-                            <td>Communauté IT </td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="https://www.altaro.com" target="_blank" title="https://www.altaro.com"> Altaro</a>
-                            </td>
-                            <td>Blog, articles et ressources pour les technologies de virtualisation et de sauvegarde</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Sécurité">
-                            <td>
-                                <a href="http://www.ssi.gouv.fr/" target="_blank" title="http://www.ssi.gouv.fr/"> ANSSI</a>
-                            </td>
-                            <td>Site de l'Agence nationale de la sécurité des systèmes d'information</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Sécurité">
-                            <td>
-                                <a href="https://www.leblogduhacker.fr/" target="_blank" title="https://www.leblogduhacker.fr/"> Blog du hacker</a>
-                            </td>
-                            <td>Blog et ressources de hacking éthique</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://www.blogdumoderateur.com/" target="_blank" title="https://www.blogdumoderateur.com/"> Blog du modérateur</a>
-                            </td>
-                            <td>Le média des professionnels du digital</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Sécurité">
-                            <td>
-                                <a href="https://www.cert.ssi.gouv.fr/" target="_blank" title="https://www.cert.ssi.gouv.fr/"> CERT-fr</a>
-                            </td>
-                            <td>Computer Emergency Response Team pour la France</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Sécurité">
-                            <td>
-                                <a href="https://www.cnil.fr/" target="_blank" title="https://www.cnil.fr/"> CNIL</a>
-                            </td>
-                            <td>Commission nationale informatique et libertés</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://www.codecademy.com/fr/learn" target="_blank" title="https://www.codecademy.com/fr/learn"> CodeAcademy</a>
-                            </td>
-                            <td>MOOC et communauté de développeurs</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://codepen.io/cyril-fouquet/#" target="_blank" title="https://codepen.io/cyril-fouquet/#"> CodePen</a>
-                            </td>
-                            <td>Editeur en ligne et plateforme de partage de code </td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://www.coursera.org/" target="_blank" title="https://www.coursera.org/"> Coursera</a>
-                            </td>
-                            <td>MOOC</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="http://danstoncloud.com/fr/" target="_blank" title="http://danstoncloud.com/fr/"> Dans ton cloud</a>
-                            </td>
-                            <td>Communauté généraliste</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://developer.microsoft.com/fr-fr/" target="_blank" title="https://developer.microsoft.com/fr-fr/">
-                                    Developer.microsoft.com</a>
-                            </td>
-                            <td>Portail et communauté dédiés aux technologies de développement Microsoft</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://developer.mozilla.org/fr/" target="_blank" title="https://developer.mozilla.org/fr/"> Developer.mozilla.org</a>
-                            </td>
-                            <td>Resources et cours pour le développement par la fondation Mozilla</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://www.developpez.com/" target="_blank" title="https://www.developpez.com/"> Developpez.com</a>
-                            </td>
-                            <td>Communauté de développeurs</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="http://www.edugeek.net/" target="_blank" title="http://www.edugeek.net/"> EduGeek</a>
-                            </td>
-                            <td>Communauté généraliste IT</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Acteurs locaux du numérique">
-                            <td>
-                                <a href="https://lehq.co/tours/" target="_blank" title="https://lehq.co/tours/">Le HQ Tours</a>
-                            </td>
-                            <td> Espace de coworking, formation et événementiel</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://www.experts-exchange.com/" target="_blank" title="https://www.experts-exchange.com/"> Experts-Exchange</a>
-                            </td>
-                            <td>Communauté IT généraliste</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://www.forum-microsoft.org/" target="_blank" title="https://www.forum-microsoft.org/"> Forums-Microsoft</a>
-                            </td>
-                            <td>Communauté de développeurs</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://www.freecodecamp.org/" target="_blank" title="https://www.freecodecamp.org/"> FreeCodeCamp</a>
-                            </td>
-                            <td>MOOC</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Acteurs locaux du numérique">
-                            <td>
-                                <a href="https://frenchtech-loirevalley.com/" target="_blank" title="https://frenchtech-loirevalley.com/"> French Tech Loire Valley</a>
-                            </td>
-                            <td>La communauté de tous ceux qui font le numérique dans le Val de Loire. </td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="http://www.futura-sciences.com/" target="_blank" title="http://www.futura-sciences.com/"> Futura Sciences</a>
-                            </td>
-                            <td>Futura-Sciences.com - Actualités</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="http://indepnet.net/" target="_blank" title="http://indepnet.net/"> Indepnet</a>
-                            </td>
-                            <td>Association à but non lucratif dont l’objet est de promouvoir et démocratiser l’Internet contributif
-                                et non marchand.
-                            </td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://www.lemonde.fr/international/rss_full.xml" target="_blank" title="https://www.lemonde.fr/international/rss_full.xml">
-                                    International - LeMonde.fr</a>
-                            </td>
-                            <td>International - LeMonde.fr</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://www.it-connect.fr/" target="_blank" title="https://www.it-connect.fr/"> IT-Connect</a>
-                            </td>
-                            <td>Plate-forme de cours sur l’administration systèmes et réseau pour les professionnels de l’informatique</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Organisation">
-                            <td>
-                                <a href="http://www.itilfrance.com/" target="_blank" title="http://www.itilfrance.com/"> ITIL France</a>
-                            </td>
-                            <td>Site francophone et gratuit sur l'ITSM</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://www.journaldunet.com/" target="_blank" title="https://www.journaldunet.com/"> Journal Du Net</a>
-                            </td>
-                            <td>Site d'information économique</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://korben.info/" target="_blank" title="https://korben.info/"> Korben</a>
-                            </td>
-                            <td>Actualité, veille et communauté IT</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Acteurs locaux du numérique">
-                            <td>
-                                <a href="https://paloaltours.org/" target="_blank" title="https://paloaltours.org/">PaloAltours</a>
-                            </td>
-                            <td> La communauté de l'innovation numérique en Touraine</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://www.supinfo.com/laboratoires" target="_blank" title="https://www.supinfo.com/laboratoires"> Laboratoires SupInfo</a>
-                            </td>
-                            <td>Laboratoires (projets, forums, communautés) des étudiants de SupInfo</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://www.lemonde.fr/rss/une.xml" target="_blank" title="https://www.lemonde.fr/rss/une.xml"> Le Monde.fr : A la une</a>
-                            </td>
-                            <td>Le Monde.fr : A la une</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://msdn.microsoft.com/fr-fr/" target="_blank" title="https://msdn.microsoft.com/fr-fr/"> MDSN</a>
-                            </td>
-                            <td>Portail et communauté dédiés aux technologies de développement Microsoft</td>
-                        </tr>
-                        <tr class="linkitem" edata-category="IT – Généraliste">
-                            <td>
-                                <a href="https://openclassrooms.com" target="_blank" title="https://openclassrooms.com"> OpenClassroom</a>
-                            </td>
-                            <td>MOOC et communauté IT</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://www.pcreview.co.uk/" target="_blank" title="https://www.pcreview.co.uk/"> PC Review</a>
-                            </td>
-                            <td>Site d'actualité IT généraliste</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://www.lemonde.fr/planete/rss_full.xml" target="_blank" title="https://www.lemonde.fr/planete/rss_full.xml">
-                                    Planète - LeMonde.fr</a>
-                            </td>
-                            <td>Planète - LeMonde.fr</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="http://powershell-scripting.com/index.php" target="_blank" title="http://powershell-scripting.com/index.php">
-                                    Powershell-scripting.com</a>
-                            </td>
-                            <td>Site/communauté dédié à Powershell</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://slate.com/" target="_blank" title="https://slate.com/"> Slate.com</a>
-                            </td>
-                            <td>Site d'information généraliste</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="http://www.slate.fr/" target="_blank" title="http://www.slate.fr/"> Slate.fr</a>
-                            </td>
-                            <td>Site d'information généraliste</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://www.sololearn.com/Profile/8880332#_=_" target="_blank" title="https://www.sololearn.com/Profile/8880332#_=_">
-                                    SoloLearn</a>
-                            </td>
-                            <td>MOOC</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Logiciels">
-                            <td>
-                                <a href="https://sourceforge.net/" target="_blank" title="https://sourceforge.net/"> Sourceforge.net</a>
-                            </td>
-                            <td>Forge de projets OpenSource</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://community.spiceworks.com/" target="_blank" title="https://community.spiceworks.com/"> Spiceworks</a>
-                            </td>
-                            <td>Communauté IT </td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://stackexchange.com/sites#" target="_blank" title="https://stackexchange.com/sites#"> StackExchange</a>
-                            </td>
-                            <td>Portail de sites et communautés (IT et autres thèmes) </td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://stackoverflow.com/" target="_blank" title="https://stackoverflow.com/"> StackOverflow</a>
-                            </td>
-                            <td>Communauté de développeurs</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://support.microsoft.com" target="_blank" title="https://support.microsoft.com"> Support Microsoft</a>
-                            </td>
-                            <td>Base de connaissance Microsoft</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="https://www.synergeek.fr/" target="_blank" title="https://www.synergeek.fr/"> SynerGeek</a>
-                            </td>
-                            <td>Actualités et veille IT</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="https://technet.microsoft.com/fr-fr/sysinternals" target="_blank" title="https://technet.microsoft.com/fr-fr/sysinternals">
-                                    SysInternals</a>
-                            </td>
-                            <td>Outils et utilitaires systèmes</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://technet.microsoft.com/" target="_blank" title="https://technet.microsoft.com/"> Technet</a>
-                            </td>
-                            <td>Portail des technologie Microsoft</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://www.techno-science.net/" target="_blank" title="https://www.techno-science.net/"> Techno-Science.net</a>
-                            </td>
-                            <td>Techno-Science.net - Actualité des sciences et des techniques</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://www.lemonde.fr/technologies/rss_full.xml" target="_blank" title="https://www.lemonde.fr/technologies/rss_full.xml">
-                                    Technologies - LeMonde.fr</a>
-                            </td>
-                            <td>Technologies - LeMonde.fr</td>
-                        </tr>
-                        <tr class="linkitem" data-category="Actualité et information">
-                            <td>
-                                <a href="https://www.ted.com/talks?language=fr" target="_blank" title="https://www.ted.com/talks?language=fr"> TEDx</a>
-                            </td>
-                            <td>Talks et prospective pluridisciplinaires</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Actualité et veille">
-                            <td>
-                                <a href="https://www.toolinux.com/" target="_blank" title="https://www.toolinux.com/"> TooLinux</a>
-                            </td>
-                            <td> L'actualité de Linux, des logiciels libres et de l'interopérabilité en langue française, depuis mars
-                                2000.</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Organisation">
-                            <td>
-                                <a href="https://trello.com/fouquetc" target="_blank" title="https://trello.com/fouquetc"> Trello</a>
-                            </td>
-                            <td>Outil de suivi de projets et de travail en équipe</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="http://tryalgo.org/" target="_blank" title="http://tryalgo.org/"> TryAlgo</a>
-                            </td>
-                            <td>Résolution de problèmes algorithmiques</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Systèmes">
-                            <td>
-                                <a href="http://vmblog.com/home.aspx" target="_blank" title="http://vmblog.com/home.aspx"> VMBlog</a>
-                            </td>
-                            <td>Information et actualités sur les technologies de virtualisation</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Généraliste">
-                            <td>
-                                <a href="https://communities.vmware.com/welcome" target="_blank" title="https://communities.vmware.com/welcome">
-                                    VMWare Communities</a>
-                            </td>
-                            <td>Communauté VMWare</td>
-                        </tr>
-                        <tr class="linkitem" data-category="IT – Développement">
-                            <td>
-                                <a href="https://www.w3schools.com/" target="_blank" title="https://www.w3schools.com/"> W3Schools</a>
-                            </td>
-                            <td>MOOC</td>
-                        </tr>
-    
-                    </table>
-
-            </div>
-            <div class="links">
-                <a class="twitter-timeline" data-lang="fr" data-height="500" href="https://twitter.com/dogos36/lists/veille-it?ref_src=twsrc%5Etfw">A Twitter List by dogos36</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-            </div>
-        </div>
-    </section>
-
     </footer>
     <div>
         <a href="#home" class="home_arrow">
@@ -1112,11 +1158,11 @@
                 <a href="#mainActivities" title="Activités professionnelles"><i class="fas fa-thumbs-up"></i>Compétences</a>
                 <a href="#technicalSkills" class="endMenuItemGroup" title="Compétences techniques professionnelles"><i class="fas fa-wrench"></i>Univers techniques</a>
                 <hr>
-                <a href="#projectDescription" class="endMenuItemGroup" title="Projet de formation professionnelle"><i class="far fa-compass"></i>Projet</a>
+                <a href="#project" class="endMenuItemGroup" title="Projet de formation professionnelle"><i class="far fa-compass"></i>Projet</a>
                 <hr>
-                <a href="#hobbies" class="endMenuItemGroup" title="Centres d'intérêt"><i class="far fa-smile"></i>Hobbies</a>
+                <a href="#linksAndRefs" class="endMenuItemGroup" title="Liens et ressources"><i class="fas fa-link"></i>Liens et ressources</a>
                 <hr>
-                <a href="#linksAndRefs" title="Liens et ressources"><i class="fas fa-link"></i>Liens et ressources</a>
+                <a href="#hobbies" title="Centres d'intérêt"><i class="far fa-smile"></i>Hobbies</a>
             </div>
         </div>
      </nav>
