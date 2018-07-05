@@ -328,13 +328,13 @@ section:nth-of-type(even)  .arrow_next a {
 /* END BACKGROUND TIMELINE */
 
 /* BEGIN ACHIEVEMENTS  */
-.achievementsContainer, .projectContainer, .hobbiesContainer, .linksContainer {
+.achievementsContainer, .hobbiesContainer, .linksContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
   
-.achievements, .projectSubject, .hobbies,  .links {
+.achievements, .hobbies,  .links {
     position: relative;
     margin: 10px;
     padding : 5px 10px 5px 10px;
@@ -342,7 +342,7 @@ section:nth-of-type(even)  .arrow_next a {
     border-radius:5px;
 }
 
-.achievements, .projectSubject {
+.achievements{
     width: 33%;
 }
 
@@ -435,16 +435,67 @@ section:nth-of-type(even)  .arrow_next a {
 /* END ACHIEVEMENTS  */
 
 /* BEGIN PROJECT */
-
-/* END PROJECT */
-
 .projectSubject ul li ul li, .hobbies ul  li ul li {
     padding-left: 10px; 
     list-style-type: square;
 }
+/* END PROJECT */
+
+/* PROJECT V2 */
+.projectThumbnails {
+    display:flex;
+    flex-direction: row;
+    margin:0;
+}
+
+.projectThumbnail {
+    margin : 0 2px 0 0 ;     
+    padding : 10px;
+    border-radius:5px 5px 0 0 ;
+    padding : 10 px;
+    font-size:20px;
+    float:left;
+    width:15%;
+    margin:0;
+    border-color: rgba(45, 45, 45,0.1);
+    border-style:solid;
+    border-width:1px;
+    transition:0s;
+}
+
+.projectThumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 10px 0 rgba(0, 0, 0, 0.9);
+}
+
+.selProjectThumbnail {
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 10px 0 rgba(0, 0, 0, 0.9);
+    font-weight : bold;
+}
+
+.projectSubject {
+    display:none;
+    text-align: justify;
+    margin: 0 10px 0 10px;     
+}
+
+#projectDescription {
+    display:inline-block;
+}
+
+.projectContainer {
+    margin:0;
+    padding : 20px;
+    height:500px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.9);    
+    border-radius:0 0 5px 5px;
+    font-weight: bolder;
+}
+
+/*END PROJECT V2*/
 
 /* BEGIN HOBBIES */
-
 .hobbies {
     width:50%;
 }
@@ -571,7 +622,7 @@ section:nth-of-type(even)  .arrow_next a {
 }
 
 .linksHeader p {
-    font-family: 'Anton', sans-serif;
+    /*font-family: 'Anton', sans-serif;*/
     font-size:20px;
 }
 
@@ -593,12 +644,21 @@ section:nth-of-type(even)  .arrow_next a {
     padding: 8px;
 }
 
+.linkitem {
+    color : rgb(90, 90, 90);
+    background-color: rgb(255, 255, 255);    
+}
+
 .linkitemDark {
+    color : rgb(90, 90, 90);
     background-color: rgb(242, 242, 242);
 }
 
 #linksTable tr:hover {
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(200, 200, 200);
 }
 
 /* END LINKS*/
+
+
+
