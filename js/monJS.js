@@ -12,8 +12,8 @@
 
     // SLIDESHOW CONTENT MANAGEMENT 
     function showSlides(n) {
-        var i;
-        var thumbnails = $(".slideshowThumbnail");
+        let i;
+        let thumbnails = $(".slideshowThumbnail");
         if (n > thumbnails.length) {slideIndex = 1}
         if (n < 1) {slideIndex = thumbnails.length}
         for (i = 0; i < thumbnails.length; i++) {
@@ -22,7 +22,7 @@
         thumbnails[slideIndex-1].className += " active";
         myType = thumbnails[slideIndex-1].parentNode.getAttribute('data-type')
         $("#slideshowImgCategory").text(thumbnails[slideIndex-1].parentNode.getAttribute('data-category'));  
-        $("#imageDescription").text(thumbnails[slideIndex-1].alt);   
+        $("#imageDescription").text(thumbnails[slideIndex-1].title);   
         // TOGGLE BETWEEN
         switch(myType) {
             case "image":
@@ -58,8 +58,9 @@
 $(document).ready(function(){
 
 // ACHIEVEMENTS DETAIL ANIMATION    
-    var myClass
-    var myPreviousClass
+    let myClass;
+    let myPreviousClass;
+    let myFinalPos;
     $(".achievements li").click(function(){
         if (!($("#achievementDetails").is(':visible'))) {
             $("#achievementDetails").show("fast");
@@ -68,13 +69,13 @@ $(document).ready(function(){
         if (myClass!=myPreviousClass) {
             switch(myClass) {
                 case "achievement":
-                    var myFinalPos = "-33%";
+                    myFinalPos = "-33%";
                     break;
                 case "activity":
-                    var myFinalPos = "0%";
+                    myFinalPos = "0%";
                     break;
                 case "skill":
-                    var myFinalPos = "33%";
+                    myFinalPos = "33%";
                     break;
                 default:
             } 
@@ -116,7 +117,7 @@ $(document).ready(function(){
                 $("#linksTable tr").hide();
                 $("#linksTable tr[data-category=\"" + $("#linksCategoriesList").val() + "\"]").show();                 
             }
-        var rowIndex = 0;
+        let rowIndex = 0;
         $("#linksTable tr").each(function() {
             if ($(this).css("display")!=='none') {
                 if ((rowIndex % 2) !== 0) {
@@ -139,7 +140,7 @@ $(document).ready(function(){
 
         // DISPLAY SLIDESHOW FIRST IMAGE AT PAGE LOADING
         currentSlide(1);
-        var slideIndex = 1;
+        let slideIndex = 1;
         showSlides(slideIndex);
 
 });
