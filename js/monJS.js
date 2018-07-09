@@ -57,6 +57,16 @@
 
 $(document).ready(function(){
 
+
+// RESIZING THE PARALLAX
+$(window).resize(function(){
+    let myrefHeight= $("#intro_frame").height();
+    myNewHeight=myrefHeight + 100;
+    $("#parallaxIntro").height(myNewHeight);
+});
+
+
+
 // ACHIEVEMENTS DETAIL ANIMATION    
     let myClass;
     let myPreviousClass;
