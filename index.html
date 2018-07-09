@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=0.5,maximum-scale=1.0,user-scalable=yes" name="viewport">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet"> 
@@ -20,12 +20,12 @@
 <body>
     <header>
     <!-- BEGIN Intro -->        
-    <div class="parallax" id="home">
-        <div class="intro_frame" id="intro">
+    <div class="parallax" id="parallaxIntro">
+        <div class="intro_frame" id="intro_frame">
             <div class="intro">
                 <div class="intro_content" id="intro_content_left">
-                    <div id="photo" class="rubrique" title="Photo Cyril FOUQUET" alt="Photo Cyril FOUQUET">
-                        <img src="./img/Cyril.png" class="photo" alt "Photo Cyril">
+                    <div id="photo" class="rubrique">
+                        <img src="./img/Cyril.png" class="photo" alt="Photo Cyril">
                     </div>
                     <div class="intro_name">
                         Cyril FOUQUET
@@ -89,7 +89,7 @@
                 </a>
             </div>
         </div>
-    </div>
+ </div>
     <!-- END Intro -->
     </header>
     <!-- BEGIN Education and background -->   
@@ -637,6 +637,8 @@
             <div class="linksContainer">
                 <div class="links">
                         <table id="linksTable">
+                            <col id="colLink">
+                            <col id="colLinkDescription">
                             <tr class="linkitem" data-category="IT – Actualité et veille">
                                 <td>
                                     <a href="https://www.01net.com" target="_blank" title="https://www.01net.com"> 01.Net</a>
@@ -1118,7 +1120,7 @@
     
         <!-- BEGIN Home arrow -->
         <div>
-            <a href="#home" class="home_arrow">
+            <a href="#home" class="home_arrow" title="Home">
                 <i class="fas fa-chevron-circle-up fa-3x"></i>
             </a>
         </div>
@@ -1131,7 +1133,7 @@
                 <i class="fas fa-bars fa-2x" title="Menu général. Cliquer pour afficher les rubriques"></i>
             </a>
             <div class="menuItem">
-                <a href="#home" class="endMenuItemGroup" title="Accueil"><i class="fas fa-home"></i>Accueil</a>
+                <a href="#parallaxIntro" class="endMenuItemGroup" title="Accueil"><i class="fas fa-home"></i>Accueil</a>
                 <hr>
                 <a href="#educationAndBackground" class="endMenuItemGroup" title="Parcours professionnel"><i class="fas fa-graduation-cap"></i>Parcours</a>
                 <hr>
@@ -1145,7 +1147,7 @@
                 <hr>
                 <a href="#hobbies" class="endMenuItemGroup" title="Centres d'intérêt"><i class="far fa-smile"></i>Hobbies</a>
                 <hr>
-                <a href="#contactInfo" title="Contacts"><i class="far fa-smile"></i>Contacts</a>
+                <a href="#contactInfo" title="Contacts"><i class="fas fa-at"></i>Contacts</a>
             </div>
         </div>
     </nav>
