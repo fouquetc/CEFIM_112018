@@ -70,40 +70,50 @@ $(window).resize(function(){
 // ACHIEVEMENTS DETAIL ANIMATION    
     let myClass;
     let myPreviousClass;
-    let myFinalPos;
+    let myFinalLeftPos;
+    let myFinalLeftPosMin;
+    let myFinalTopPosMin;
     $(".achievements li").click(function(){
         if (!($("#achievementDetails").is(':visible'))) {
             $("#achievementDetails").show("fast");
         }
-        if (window.matchMedia("(min-width: 600px)").matches) {
             myClass = $(this).children("div:first").attr("class");
             if (myClass!=myPreviousClass) {
                 switch(myClass) {
                     case "achievement":
-                        myFinalPos = "-33%";
+                        myFinalLeftPos = "-33%";
+                        myFinalLeftPosMin = $("#mainAchievements").position().left;
+                        myFinalTopPosMin = $("#mainAchievements").position().top + $("#mainAchievements").outerHeight();
                         break;
                     case "activity":
-                        myFinalPos = "0%";
+                        myFinalLeftPos = "0%";
+                        myFinalLeftPosMin = $("#mainActivities").position().left;
+                        myFinalTopPosMin = $("#mainActivities").position().top + $("#mainAchievements").outerHeight();                       
                         break;
                     case "skill":
-                        myFinalPos = "33%";
+                        myFinalLeftPos = "33%";
+                        myFinalLeftPosMin = $("#technicalSkills").position().left;
+                        myFinalTopPosMin = $("#technicalSkills").position().top + $("#mainAchievements").outerHeight();
                         break;
                     default:
                 }
             }
         myPreviousClass = myClass;
+        if (window.matchMedia("(min-width: 600px)").matches) {
+            $("#achievementDetails").animate({left: myFinalLeftPos}, "fast");
         }
         else {
-            myFinalPos = "0%";
-            $("#achievementDetails").animate({top: $(this).parent().position().top}, "fast");
-            $("#achievementDetails").animate({left: $(this).parent().position().left}, "fast");
-
+            alert(myFinalLeftPosMin);
+            alert(myFinalTopPosMin);
+            $("#achievementDetails").animate({left: myFinalLeftPosMin}, "fast");
+            $("#achievementDetails").animate({top: myFinalTopPosMin}, "fast");
         }
-        $("#achievementDetails").animate({left: myFinalPos}, "fast");
+       
         $("#mainAchievements li").css({"font-weight":"normal", "color":"unset"});                 
         $("#mainActivities li").css({"font-weight":"normal", "color":"unset"});                 
         $("#technicalSkills li").css({"font-weight":"normal", "color":"unset"});                 
         $(this).css({"color":"rgb(0,128,255)","font-weight":"bold"});
+        alert("passé");
         $("#achievementDetails #Title").html($(this).find(".Title").html());
         $("#achievementDetails #Detail").html($(this).find(".Detail").html());
 
