@@ -10,6 +10,13 @@
         showSlides(slideIndex = n);
     }
 
+    // INTRO PARALLAX RESIZE
+    function parallaxResize () {
+        let myrefHeight= $("#intro_frame").height();
+        myNewHeight=myrefHeight + 100;
+        $("#parallaxIntro").height(myNewHeight);
+    }
+
     // SLIDESHOW CONTENT MANAGEMENT 
     function showSlides(n) {
         let i;
@@ -58,39 +65,42 @@
 $(document).ready(function(){
 
 
-// RESIZING THE PARALLAX
+// RESIZING WINDOW 
 $(window).resize(function(){
-    let myrefHeight= $("#intro_frame").height();
-    myNewHeight=myrefHeight + 100;
-    $("#parallaxIntro").height(myNewHeight);
+    parallaxResize ();
+    $("#achievementDetailsContainer").hide("fast");
 });
 
 
-
 // ACHIEVEMENTS DETAIL ANIMATION    
-    let myClass;
-    let myPreviousClass;
-    let myFinalPos;
+let myClass;
+let myPreviousClass;
+let myFinalLeftPos;
+let myFinalTopPosRef;
+let myFinalTopPos;
     $(".achievements li").click(function(){
-        if (!($("#achievementDetails").is(':visible'))) {
-            $("#achievementDetails").show("fast");
+        if (!($("#achievementDetailsContainer").is(':visible'))) {
+            $("#achievementDetailsContainer").show("fast");
+            $("#achievementDetailsContainer").css({"display:":"block"});
         }
-        myClass = $(this).children("div:first").attr("class");
-        if (myClass!=myPreviousClass) {
-            switch(myClass) {
-                case "achievement":
-                    myFinalPos = "-33%";
-                    break;
-                case "activity":
-                    myFinalPos = "0%";
-                    break;
-                case "skill":
-                    myFinalPos = "33%";
-                    break;
-                default:
-            } 
-            $("#achievementDetails").animate({left: myFinalPos}, "fast");
-        }
+            myClass = $(this).children("div:first").attr("class");
+            if (myClass!=myPreviousClass) {
+                switch(myClass) {
+                    case "achievement":
+                        myFinalLeftPos = "0%";
+                        myFinalTopPosRef = "#mainAchievements";
+                        break;
+                    case "activity":
+                        myFinalLeftPos = "33%";
+                        myFinalTopPosRef = "#mainActivities";
+                        break;
+                    case "skill":
+                        myFinalLeftPos = "66%";
+                        myFinalTopPosRef = "#technicalSkills";
+                        break;
+                    default:
+                }
+            }
         myPreviousClass = myClass;
         $("#mainAchievements li").css({"font-weight":"normal", "color":"unset"});                 
         $("#mainActivities li").css({"font-weight":"normal", "color":"unset"});                 
@@ -98,7 +108,16 @@ $(window).resize(function(){
         $(this).css({"color":"rgb(0,128,255)","font-weight":"bold"});
         $("#achievementDetails #Title").html($(this).find(".Title").html());
         $("#achievementDetails #Detail").html($(this).find(".Detail").html());
-
+        if (!(window.matchMedia("(max-width: 600px)").matches)) {
+            $("#achievementDetails").animate({top : 0 }, "fast");         
+            $("#achievementDetails").animate({left: myFinalLeftPos}, "fast");     
+        }
+        else { 
+            //myFinalTopPos = $(myFinalTopPosRef).position().top + $(myFinalTopPosRef).height();
+            myFinalTopPos =  $(myFinalTopPosRef).position().top //+ $(myFinalTopPosRef).outerHeight() 
+            $("#achievementDetails").animate({top : myFinalTopPos }, "fast");
+            $("#achievementDetails").animate({left: 0 }, "fast");     
+        }
     });
 
 // END ACHIEVEMENTS DETAIL ANIMATION    
@@ -144,13 +163,13 @@ $(window).resize(function(){
     }); 
     //END LINKS LIST MANAGEMENT
 
-        // SELECT "TOUTES" IN CATEGORY DROPWDOWN LIST TO DISPLAY THE WHOLE LINKS LIST AT PAGE LOADING
-        $("#linksCategoriesList").val("*");
-        $("#linksCategoriesList").trigger("change");
+    // SELECT "TOUTES" IN CATEGORY DROPWDOWN LIST TO DISPLAY THE WHOLE LINKS LIST AT PAGE LOADING
+    $("#linksCategoriesList").val("*");
+    $("#linksCategoriesList").trigger("change");
 
-        // DISPLAY SLIDESHOW FIRST IMAGE AT PAGE LOADING
-        currentSlide(1);
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
+    // DISPLAY SLIDESHOW FIRST IMAGE AT PAGE LOADING
+    currentSlide(1);
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    $(window).trigger("resize");
 });
