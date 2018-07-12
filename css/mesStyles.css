@@ -25,7 +25,29 @@ section {
     text-align: center;
     text-transform: uppercase;
 }
- 
+
+  
+section:nth-of-type(odd) {
+    background :rgba(255,255,255 0.1);
+    color: rgb(90, 90, 90);
+}
+  
+section:nth-of-type(odd)  .arrow_next a  {
+    color: rgb(90, 90, 90);
+
+}
+  
+section:nth-of-type(even) {
+    /*background : rgb(0, 0, 0); */
+    color : rgb(255,255,255);
+    background-color: rgb(90, 90, 90);
+
+}
+  
+section:nth-of-type(even)  .arrow_next a {
+    color : rgb(255,255,255);
+}
+
 /* END  GENERAL STYLES */
   
 /* BEGIN NAVIGATION */
@@ -56,7 +78,6 @@ nav {
 }  
   
 .menu_root {
-    /*display:inline-block;*/
     padding : 10px 10px;
     float: left;
 }
@@ -189,29 +210,9 @@ nav {
 }
   
 /* END INTRO*/
-  
-section:nth-of-type(odd) {
-    background :rgba(255,255,255 0.1);
-    color: rgb(90, 90, 90);
-}
-  
-section:nth-of-type(odd)  .arrow_next a  {
-    color: rgb(90, 90, 90);
-
-}
-  
-section:nth-of-type(even) {
-    /*background : rgb(0, 0, 0); */
-    color : rgb(255,255,255);
-    background-color: rgb(90, 90, 90);
-
-}
-  
-section:nth-of-type(even)  .arrow_next a {
-    color : rgb(255,255,255);
-}
 
 /*  BEGIN BACKGROUND TIMELINE */
+
 .timeline {
     position:relative;
     display: flex;
@@ -227,14 +228,6 @@ section:nth-of-type(even)  .arrow_next a {
   padding: 5px;
   width:calc(100% / 6);
   text-align:center;
-}
-  
-.education {
-    align-self: flex-end;
-}
-
-.job {
-   align-self: flex-start;
 }
   
 #dates  {
@@ -396,9 +389,7 @@ section:nth-of-type(even)  .arrow_next a {
     text-align: center;
     margin : 0 10px 0 10px;
     padding: 0;
-    /*height:100%;*/
     height:auto;
-    /*display: none;*/
     left:100%;
  }
 
@@ -559,18 +550,13 @@ section:nth-of-type(even)  .arrow_next a {
 
 /* END LINKS*/
 
-
-
 /* BEGIN HOBBIES */
+
+/* BEGIN  SLIDESHOW */
+
 .hobbies {
     width:50%;
 }
-
-#hobbiesSlideshow {
-    /*min-width: 500px;*/
-}
-
-/* BEGIN  SLIDESHOW */
 
 .slideshowContainer * {
     box-sizing: border-box;
@@ -589,10 +575,6 @@ section:nth-of-type(even)  .arrow_next a {
     width:auto;
     height:auto;
     align-items: stretch;
-    /*width:100%;
-    height:100%;*/
-    /*    min-width: 500px;
-    max-width : 1000px;*/
 }
 
 #slideshowContentImg {
@@ -603,9 +585,6 @@ section:nth-of-type(even)  .arrow_next a {
 #slideshowImg, #slideshowVideo, #slideshowAudio { 
     display: none;
     width:100%;
-    /*height: 500px;
-    min-height: 500px;
-    max-height: 1000px;*/
     object-fit: fill;
 }    
 
@@ -635,8 +614,6 @@ section:nth-of-type(even)  .arrow_next a {
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
 }
   
 .next {
@@ -660,7 +637,6 @@ section:nth-of-type(even)  .arrow_next a {
 
 .descriptionContainer {
     text-align: center;
-    /*background-color: rgb(34, 34, 34);*/
     padding: 2px 16px;
 }   
 
@@ -763,6 +739,7 @@ section {
     margin-left:auto;
     margin-right:auto;
     justify-content: center;
+    width:70%;
 }
 
 .timeline {
@@ -787,15 +764,7 @@ section {
     width:100%;
     height:100%;
 }
-  
-.education {
-    align-self: unset;
-}
-
-.job {
-   align-self: unset;
-}
-  
+ 
 #dates  {
     background: linear-gradient(to right,  rgb(255,255,255,0) 49%, rgb(0,192,255) 50%, rgba(255,255,255,0) 51%);
 }     
@@ -869,10 +838,6 @@ section {
     display: flex;
     flex-direction: row;
 }
-
-/*#achievementDetailsContainer  {
-    display:none;
-}*/
 
 .achievementsContainer, .hobbiesContainer, .linksContainer {
     margin : 1%; 
@@ -948,17 +913,8 @@ section {
 
 /* BEGIN HOBBIES */
 
-/*#hobbiesSlideshow {
-    width: auto;
-}*/
-
 /* BEGIN  SLIDESHOW */
 
-/*#slideshowContentImg {
-   height: auto;
-
-}*/
- 
 .imageCategory {
     font-size: 10px;
     padding: 4px 6px;
