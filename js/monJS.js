@@ -5,16 +5,21 @@
         showSlides(slideIndex += n);
     }
 
+    // SLIDESHOW IMAGE RESIZE
+    /*function slideshowContentResize() {
+        alert("ok");
+        $("#slideshowImg").height($("#slideshowImg").width() * 3/4); 
+        $("#slideshowVideo").height($("#slideshowVideo").width() * 3/4); 
+    }*/
+
     // THUMBNAILS MANAGEMENT 
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
 
-    // INTRO PARALLAX RESIZE
+    // INTRO RESIZE
     function parallaxResize () {
-        let myrefHeight= $("#intro_frame").height();
-        myNewHeight=myrefHeight + 100;
-        $("#parallaxIntro").height(myNewHeight);
+        $("#parallaxIntro").height($("#intro_frame").height() + 100 );
     }
 
     // SLIDESHOW CONTENT MANAGEMENT 
@@ -38,6 +43,7 @@
                 $("#slideshowImg").attr("src", thumbnails[slideIndex-1].src);
                 $("#slideshowAudio").hide();
                 $("#slideshowVideo").hide();
+
                 $("#slideshowImg").show();
                 break;
             case "audio":       
@@ -57,6 +63,7 @@
                 break;
             default:
         } 
+        //slideshowContentResize()
 
     } 
 
@@ -67,8 +74,9 @@ $(document).ready(function(){
 
 // RESIZING WINDOW 
 $(window).resize(function(){
-    parallaxResize ();
+    parallaxResize ();  
     $("#achievementDetailsContainer").hide("fast");
+    //slideshowContentResize();
 });
 
 
