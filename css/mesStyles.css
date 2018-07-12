@@ -111,7 +111,6 @@ nav {
 /* BEGIN INTRO */ 
 
 .parallax {
-    height: 600px;
     width:100%;
     background-image: url("../img/background1.jpg");
     background-attachment: fixed;
@@ -503,26 +502,19 @@ section:nth-of-type(even)  .arrow_next a {
 
 /* BEGIN LINKS*/
 
-.linksContainer > div {
+.linkContentContainer {
     padding:5px;
-}
-
-.linksHeader {
-    width: 50%;
-    margin: 0 10px;
-    font-size:48px;
+    width:50%;
 }
 
 .linksHeader p {
-    /*font-family: 'Anton', sans-serif;*/
     font-size:20px;
+    padding : 0 10px;
 }
 
 .links {
-    width: 50%;
     height:500px;
     overflow-y: auto;
-
 }
 
 #linksTable {
@@ -575,7 +567,7 @@ section:nth-of-type(even)  .arrow_next a {
 }
 
 #hobbiesSlideshow {
-    min-width: 500px;
+    /*min-width: 500px;*/
 }
 
 /* BEGIN  SLIDESHOW */
@@ -583,19 +575,27 @@ section:nth-of-type(even)  .arrow_next a {
 .slideshowContainer * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px; 
+    font-size: 16px;
     display: flex;
+    align-items: stretch;   
+}
+
+#hobbiesSlideshow {
+    align-items: stretch;
 }
 
 .slideshowContainer {
     position: relative;
-    width:100%;
-    min-width: 500px;
-    max-width : 1000px;
+    width:auto;
+    height:auto;
+    align-items: stretch;
+    /*width:100%;
+    height:100%;*/
+    /*    min-width: 500px;
+    max-width : 1000px;*/
 }
 
 #slideshowContentImg {
-   /*display: none;*/
    z-index: 1000;
    height: 400px;
 }
@@ -603,12 +603,15 @@ section:nth-of-type(even)  .arrow_next a {
 #slideshowImg, #slideshowVideo, #slideshowAudio { 
     display: none;
     width:100%;
-    /*height: 400px;*/
+    /*height: 500px;
+    min-height: 500px;
+    max-height: 1000px;*/
     object-fit: fill;
 }    
 
 #slideshowAudio {
     position:absolute;
+    width:100;
     width:auto;
     top:0;
     right:0;
@@ -674,7 +677,7 @@ section:nth-of-type(even)  .arrow_next a {
   
 .slideShowCol {
     float: left;
-    width: 10%; 
+    width: 10%;
     height:50px;
 }
   
@@ -705,7 +708,7 @@ section:nth-of-type(even)  .arrow_next a {
 
 /* MEDIA QUERIES **************************************************************************************************/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
 /* BEGIN  GENERAL STYLES */
 
@@ -871,7 +874,7 @@ section {
     display:none;
 }*/
 
-.achievementsContainer, .hobbiesContainer, .linksContainer, .projectContainer, .projectThumbnails {
+.achievementsContainer, .hobbiesContainer, .linksContainer {
     margin : 1%; 
     flex-direction: column;
     align-content: center;
@@ -921,6 +924,7 @@ section {
 
 .projectContainer {
     height:auto;
+    width:auto;
     overflow: auto;
 }
 
@@ -928,85 +932,32 @@ section {
 
 /* BEGIN LINKS*/
 
-.linksContainer > div {
-    padding:5px;
-}
-
-.linksHeader {
-    width: 50%;
-    margin: 0 10px;
-    font-size:14px;
+.linkContentContainer { 
+    width:auto;
 }
 
 .linksHeader p {
-    /*font-family: 'Anton', sans-serif;*/
     font-size:14px;
-}
-
-.links {
-    height:500px;
-    overflow-y: auto;
-}
-
-#linksTable {
-    border-collapse: collapse;
-    width: 100%;
-    border-left: none;
-    border-right: none; 
-}
-
-#linksTable tr{
-    width:100%;
-}    
-#linksTable td, #linksTable th {
-    border: 1px solid rgb(221, 221, 221);
-    padding: 8px;
-    flex-wrap: wrap;
-    word-break: break-all;
-    word-wrap: break-word;
-}
-
-.linkitem {
-    color : rgb(90, 90, 90);
-    background-color: rgb(255, 255, 255);    
-}
-
-.linkitemDark {
-    color : rgb(90, 90, 90);
-    background-color: rgb(242, 242, 242);
-}
-
-#linksTable tr:hover {
-    background-color: rgb(200, 200, 200);
-}
-
-#colLink {
-    width: 30%;
-}
-
-#colLinkDescription {
-    width: 70%;
 }
 
 /* END LINKS*/
 
-
-
-/* BEGIN HOBBIES */
-
-#hobbiesSlideshow {
-    width: auto;
-}
-
-/* BEGIN  SLIDESHOW */
-
-.slideshowContainer {
+.hobbies {
     width:auto;
 }
 
-#slideshowContentImg {
+/* BEGIN HOBBIES */
+
+/*#hobbiesSlideshow {
+    width: auto;
+}*/
+
+/* BEGIN  SLIDESHOW */
+
+/*#slideshowContentImg {
    height: auto;
-}
+
+}*/
  
 .imageCategory {
     font-size: 10px;
@@ -1040,10 +991,5 @@ section {
 }
 
 /* END CONTACT INFOS */
-
-
-
-
-
 
 }
