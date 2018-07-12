@@ -1,16 +1,9 @@
 // BEGIN SLIDESHOW ANIMATION FUNCTIONS////////////////////////////////////////////////////////////////////
-
+// Cyril FOUQUET  - 13/07/2018
     // NEXT/PREVIOUS BUTTONS ACTIONS 
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
-
-    // SLIDESHOW IMAGE RESIZE
-    /*function slideshowContentResize() {
-        alert("ok");
-        $("#slideshowImg").height($("#slideshowImg").width() * 3/4); 
-        $("#slideshowVideo").height($("#slideshowVideo").width() * 3/4); 
-    }*/
 
     // THUMBNAILS MANAGEMENT 
     function currentSlide(n) {
@@ -35,7 +28,7 @@
         myType = thumbnails[slideIndex-1].parentNode.getAttribute('data-type')
         $("#slideshowImgCategory").text(thumbnails[slideIndex-1].parentNode.getAttribute('data-category'));  
         $("#imageDescription").text(thumbnails[slideIndex-1].title);   
-        // TOGGLE BETWEEN
+        // TOGGLE BETWEEN IMAGE, AUDIO AND VIDEO CONTENT
         switch(myType) {
             case "image":
                 $("#slideshowAudio").trigger("pause");
@@ -63,7 +56,6 @@
                 break;
             default:
         } 
-        //slideshowContentResize()
 
     } 
 
@@ -76,7 +68,6 @@ $(document).ready(function(){
 $(window).resize(function(){
     parallaxResize ();  
     $("#achievementDetailsContainer").hide("fast");
-    //slideshowContentResize();
 });
 
 
@@ -121,8 +112,7 @@ let myFinalTopPos;
             $("#achievementDetails").animate({left: myFinalLeftPos}, "fast");     
         }
         else { 
-            //myFinalTopPos = $(myFinalTopPosRef).position().top + $(myFinalTopPosRef).height();
-            myFinalTopPos =  $(myFinalTopPosRef).position().top //+ $(myFinalTopPosRef).outerHeight() 
+            myFinalTopPos =  $(myFinalTopPosRef).position().top ;
             $("#achievementDetails").animate({top : myFinalTopPos }, "fast");
             $("#achievementDetails").animate({left: 0 }, "fast");     
         }
