@@ -15,6 +15,16 @@
         $("#parallaxIntro").height($("#intro_frame").height() + 100 );
     }
 
+    /*TEST*/
+    function slideshowResize () {
+        let myNewHeight = $("#slideshowContentImg").width() * 2/3 ;
+        $("#slideshowContentImg").outerHeight(myNewHeight);
+        
+        myNewHeight = $(".slideShowCol:first").width();
+        $(".slideshowRow").height(myNewHeight);
+    }
+    /*FIN TEST*/
+
     // SLIDESHOW CONTENT MANAGEMENT 
     function showSlides(n) {
         let i;
@@ -66,7 +76,8 @@ $(document).ready(function(){
 
 // RESIZING WINDOW 
 $(window).resize(function(){
-    parallaxResize ();  
+    parallaxResize (); 
+    slideshowResize(); 
     $("#achievementDetailsContainer").hide("fast");
 });
 
