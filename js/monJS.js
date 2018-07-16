@@ -15,7 +15,7 @@
         $("#parallaxIntro").height($("#intro_frame").height() + 100 );
     }
 
-    /*TEST*/
+    //SLIDESHOW RESIZE 
     function slideshowResize () {
         let myNewHeight = $("#slideshowContentImg").width() * 2/3 ;
         $("#slideshowContentImg").outerHeight(myNewHeight);
@@ -23,8 +23,7 @@
         myNewHeight = $(".slideShowCol:first").width();
         $(".slideshowRow").height(myNewHeight);
     }
-    /*FIN TEST*/
-
+    
     // SLIDESHOW CONTENT MANAGEMENT 
     function showSlides(n) {
         let i;
@@ -68,11 +67,8 @@
         } 
 
     } 
-
-// END SLIDESHOW ANIMATION FUNCTIONS
-
+// MAIN
 $(document).ready(function(){
-
 
 // RESIZING WINDOW 
 $(window).resize(function(){
@@ -81,10 +77,9 @@ $(window).resize(function(){
     $("#achievementDetailsContainer").hide("fast");
 });
 
-
 // ACHIEVEMENTS DETAIL ANIMATION    
+var myPreviousClass;
 let myClass;
-let myPreviousClass;
 let myFinalLeftPos;
 let myFinalTopPosRef;
 let myFinalTopPos;
@@ -110,6 +105,16 @@ let myFinalTopPos;
                         break;
                     default:
                 }
+                if (window.matchMedia("(max-width: 800px)").matches) {
+                    myFinalTopPos =  $(myFinalTopPosRef).position().top ;
+                    $("#achievementDetails").animate({top : myFinalTopPos }, "fast");
+                    $("#achievementDetails").animate({left: 0 }, "fast");     
+                }
+                else { 
+                    $("#achievementDetails").animate({left: myFinalLeftPos}, "fast");                 
+                    $("#achievementDetails").animate({top : 0 }, "fast");
+                }
+                        
             }
         myPreviousClass = myClass;
         $("#mainAchievements li").css({"font-weight":"normal", "color":"unset"});                 
@@ -118,20 +123,9 @@ let myFinalTopPos;
         $(this).css({"color":"rgb(0,128,255)","font-weight":"bold"});
         $("#achievementDetails #Title").html($(this).find(".Title").html());
         $("#achievementDetails #Detail").html($(this).find(".Detail").html());
-        if (!(window.matchMedia("(max-width: 600px)").matches)) {
-            $("#achievementDetails").animate({top : 0 }, "fast");         
-            $("#achievementDetails").animate({left: myFinalLeftPos}, "fast");     
-        }
-        else { 
-            myFinalTopPos =  $(myFinalTopPosRef).position().top ;
-            $("#achievementDetails").animate({top : myFinalTopPos }, "fast");
-            $("#achievementDetails").animate({left: 0 }, "fast");     
-        }
     });
 
-// END ACHIEVEMENTS DETAIL ANIMATION    
-
-// PROJECT SUBJECTS  MANAGEMENT 
+// PROJECT SUBJECTS CONTENT MANAGEMENT 
     $(".projectThumbnail").click(function(){
         // HIDE ALL SUBJECTS AND SHOW THE CLICKED THUMB TARGET SUBJECT 
         $(".projectSubject").hide();
@@ -142,9 +136,7 @@ let myFinalTopPos;
 
     });
 
-// END PROJECT SUBJECTS  MANAGEMENT 
-
-//BEGIN LINKS LIST MANAGEMENT
+//LINKS LIST MANAGEMENT
     // FILTER LINKS LIST ACCORDING TO THE SELECTED CATEGORY 
     $("#linksCategoriesList").change(function(){
 
@@ -170,13 +162,12 @@ let myFinalTopPos;
             }
         });
     }); 
-    //END LINKS LIST MANAGEMENT
-
+  
     // SELECT "TOUTES" IN CATEGORY DROPWDOWN LIST TO DISPLAY THE WHOLE LINKS LIST AT PAGE LOADING
     $("#linksCategoriesList").val("*");
     $("#linksCategoriesList").trigger("change");
 
-    // DISPLAY SLIDESHOW FIRST IMAGE AT PAGE LOADING
+// DISPLAY SLIDESHOW FIRST IMAGE AS DEFAULT AT PAGE LOADING
     currentSlide(1);
     let slideIndex = 1;
     showSlides(slideIndex);
