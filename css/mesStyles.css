@@ -387,6 +387,7 @@ nav {
 #achievementDetailsContainer {
     display:none;
     width:auto;
+    height:200px;
 }
 
 #achievementDetails {
@@ -562,7 +563,7 @@ nav {
 /* BEGIN  SLIDESHOW */
 
 .hobbies {
-    width: auto;
+    width:50%;
 }
 
 .slideshowContainer * {
@@ -683,7 +684,7 @@ nav {
 
 /* END CONTACT INFOS */
 
-/***** MEDIA QUERIES < 800 px ****/
+/***** MEDIA QUERIES SCREEN < 800 px **********************************************************************/
 
 @media screen and (max-width: 800px) {
 
@@ -858,6 +859,10 @@ section {
     position: relative;
     justify-content: center;
     margin: 2px 0;
+}
+
+#achievementDetailsContainer {
+    height:auto;
 }
 
 #achievementDetails {
