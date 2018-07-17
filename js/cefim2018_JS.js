@@ -106,7 +106,7 @@ let myFinalTopPos;
                     default:
                 }
                 if (window.matchMedia("(max-width: 800px)").matches) {
-                    myFinalTopPos =  $(myFinalTopPosRef).position().top ;
+                    myFinalTopPos =  $(myFinalTopPosRef).position().top - 10 ; // -10 -> TO INCLUDE .achievements MARGIN IN #achievementDetails TOP POSITIONING
                     $("#achievementDetails").animate({top : myFinalTopPos }, "fast");
                     $("#achievementDetails").animate({left: 0 }, "fast");     
                 }
