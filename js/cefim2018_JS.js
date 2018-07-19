@@ -90,17 +90,14 @@ $(document).ready(function () {
                 case "achievement":
                     myrefContainer = "#mainAchievements";
                     myFinalLeftPos = "0%";
-                    //myFinalTopPosRef = "#mainAchievements";
                     break;
                 case "activity":
                     myrefContainer = "#mainActivities";
                     myFinalLeftPos = 100 / 3 + "%";
-                    //myFinalTopPosRef = "#mainActivities";
                     break;
                 case "skill":
                     myrefContainer = "#technicalSkills";
                     myFinalLeftPos = (100 / 3) * 2 + "%";
-                    //myFinalTopPosRef = "#technicalSkills";
                     break;
                 default:
             }
