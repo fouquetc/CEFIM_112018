@@ -432,7 +432,7 @@ nav {
     padding : 10px;
     font-size:20px;
     float:left;
-    width:15%;
+    width:20%;
     margin:0;
     background-color: rgb(242, 242, 242);
     transition:0s;
@@ -465,6 +465,7 @@ nav {
     margin:0;
     padding : 20px;
     height:500px;
+    max-height:600px;
     overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.9);    
     border-radius:0 0 5px 5px;
@@ -820,12 +821,6 @@ section {
 
 .projectThumbnail:before {
     display: none;
-}
-
-.projectContainer {
-    height:auto;
-    width:auto;
-    overflow: auto;
 }
 /* #endregion PROJECT */
 
