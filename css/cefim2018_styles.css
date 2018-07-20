@@ -499,6 +499,10 @@ nav {
  }
 
 .linksHeader p {
+  justify-content: flex-end;
+}
+
+.linksHeader p {
     font-size:20px;
     padding : 0 10px;
 }
