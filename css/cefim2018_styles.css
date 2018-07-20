@@ -1,12 +1,10 @@
-/* BEGIN  GENERAL STYLES */
-
+/* #region GENERAL STYLES */
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
 * {
   font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   transition: all 0.3s;
-
 }
   
 body {
@@ -25,7 +23,6 @@ section {
     text-align: center;
     text-transform: uppercase;
 }
-
   
 section:nth-of-type(odd) {
     background :rgba(255,255,255, 0.1);
@@ -40,23 +37,19 @@ section:nth-of-type(odd)  .arrow_next a  {
 section:nth-of-type(even) {
     color : rgb(255,255,255);
     background-color: rgb(90, 90, 90);
-
 }
   
 section:nth-of-type(even)  .arrow_next a {
     color : rgb(255,255,255);
 }
-
-/* END  GENERAL STYLES */
+/* #endregion */
   
-/* BEGIN NAVIGATION */
-
+/* #region NAVIGATION */
 .arrow_next  {
     margin-left: auto;
     margin-right: auto;
     color:rgb(255, 255, 255);
     text-align: center; 
-
 }
   
 .home_arrow {
@@ -125,11 +118,9 @@ nav {
 .menu_root:hover .menuItem  {
     display:block;
 }
+/* #endregion NAVIGATION */  
   
-/* END NAVIGATION */  
-  
-/* BEGIN INTRO */ 
-
+/* #region INTRO */ 
 .parallax {
     width:100%;
     background-image: url("../img/background1.jpg");
@@ -217,11 +208,9 @@ nav {
   .profil a:hover {
     color:rgb(0,128,255);
 }
-  
-/* END INTRO*/
+/* #endregion INTRO*/
 
-/*  BEGIN BACKGROUND TIMELINE */
-
+/*  #region BACKGROUND TIMELINE */
 .timeline {
     position:relative;
     display: flex;
@@ -317,11 +306,9 @@ nav {
     color:rgb(0,128,255);
     padding : 10px 0 0 0;
 }
-  
-/* END BACKGROUND TIMELINE */
+/* #endregion BACKGROUND TIMELINE */
 
-/* BEGIN ACHIEVEMENTS  */
-
+/* #region ACHIEVEMENTS  */
 #achievementsContent {
     display:flex;
     flex-direction:column;
@@ -392,7 +379,7 @@ nav {
     box-shadow: none;
     text-align: center;
     left:100%;
- }
+}
 
 #achievementDetails #Title {
     font-size: 20px;
@@ -429,11 +416,9 @@ nav {
     border:0;
     background-image: linear-gradient(to right, rgba(0,128,255,0.2), rgb(0,128,255),rgba(0,128,255,0.2));
 }
+/* #endregion ACHIEVEMENTS  */
 
-/* END ACHIEVEMENTS  */
-
-/* BEGIN PROJECT */
-
+/* #region PROJECT */
 .projectThumbnails {
     display:flex;
     flex-direction: row;
@@ -486,9 +471,9 @@ nav {
     font-weight: bolder;
 }
 
-/*END PROJECT */
+/* #endregion PROJECT */
 
-/* BEGIN LINKS*/
+/* #region LINKS*/
 
 .linkContentContainer {
     display:flex;
@@ -549,19 +534,19 @@ nav {
     width: 70%;
 }
 
-/* END LINKS*/
+/* #endregion LINKS*/
 
-/* BEGIN HOBBIES */
+/* #region HOBBIES */
 
 .hobbiesContainer {
     align-items: center;
 }
 
-/* BEGIN  SLIDESHOW */
-
 .hobbies {
     width:50%;
 }
+
+/* #region SLIDESHOW  */
 
 .slideshowContainer * {
     box-sizing: border-box;
@@ -656,12 +641,10 @@ nav {
     opacity: 1;
 }
 
-/* END  SLIDESHOW */
+/* #endregion SLIDESHOW  */
+/* #endregion HOBBIES */
 
-/* END HOBBIES */
-
-/*BEGIN CONTACT INFOS*/
-
+/* #region CONTACT INFOS*/
 #contactInfo {
     display: flex;
     flex-direction: row;
@@ -673,15 +656,12 @@ nav {
     margin:0 10px;
     text-align: center;
 }
+/* #endregion CONTACT INFOS */
 
-/* END CONTACT INFOS */
-
-/***** MEDIA QUERIES SCREEN < 800 px **********************************************************************/
-
+/* #region MEDIA QUERIES : SCREEN < 800 px */
 @media screen and (max-width: 800px) {
 
-/* BEGIN  GENERAL STYLES */
-
+/* #region GENERAL STYLES */
 * {
   font-size: 12px;
 }
@@ -693,11 +673,9 @@ section {
 .section_title {
     font-size: 16px;
 }
- 
-/* END  GENERAL STYLES */
+/* #endregion GENERAL STYLES */
     
-/* BEGIN INTRO */ 
-
+/* #region INTRO */ 
 .intro {
     flex-direction: column;
     -ms-transform: translateY(50px); /* IE 9 */
@@ -723,11 +701,10 @@ section {
 
 .profil {
     flex-direction: column;
-}
-    
-/* END INTRO*/
+}  
+/* #endregion INTRO*/
   
-/*  BEGIN BACKGROUND TIMELINE */
+/* #region BACKGROUND TIMELINE */
 
 #timelineContainer {
     display:flex;
@@ -789,11 +766,9 @@ section {
 .info {
     width:100%;
 }
+/* #endregion BACKGROUND TIMELINE */
 
-/* END BACKGROUND TIMELINE */
-
-/* BEGIN ACHIEVEMENTS  */
-
+/* #region ACHIEVEMENTS  */
 #achievementsContent {
     flex-direction: row;
 }
@@ -831,10 +806,9 @@ section {
 #achievementDetailsLine {
     display:none;
 }
+/* #endregion ACHIEVEMENTS  */
 
-/* END ACHIEVEMENTS  */
-
-/* BEGIN PROJECT */
+/* #region PROJECT */
 
 .projectThumbnails {
     flex-direction: row;
@@ -853,10 +827,9 @@ section {
     width:auto;
     overflow: auto;
 }
+/* #endregion PROJECT */
 
-/*END PROJECT */
-
-/* BEGIN LINKS*/
+/* #region LINKS*/
 
 .linkContentContainer { 
     width:auto;
@@ -865,16 +838,15 @@ section {
 .linksHeader p {
     font-size:14px;
 }
+/* #endregion LINKS*/
 
-/* END LINKS*/
 
+/* #region HOBBIES */
 .hobbies {
     width:auto;
 }
 
-/* BEGIN HOBBIES */
-
-/* BEGIN  SLIDESHOW */
+/* #region SLIDESHOW */
 
 .imageCategory {
     font-size: 10px;
@@ -888,13 +860,10 @@ section {
 #imageDescription {
     font-size:10px;
 }
- 
-/* END  SLIDESHOW */
+/* #endregion SLIDESHOW */
+/* #endregion HOBBIES */
 
-/* END HOBBIES */
-
-/*BEGIN CONTACT INFOS*/
-
+/* #region CONTACT INFOS*/
 #contactInfo {
     display: flex;
     flex-direction: row;
@@ -907,7 +876,7 @@ section {
     text-align: center;
 }
 
-/* END CONTACT INFOS */
+/* #endregion CONTACT INFOS */
 
 }
-/***** END MEDIA QUERIES < 800 px ****/
+/* #endregion MEDIA QUERIES < 800 px */
