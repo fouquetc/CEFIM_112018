@@ -498,10 +498,6 @@ nav {
     width:50%;
  }
 
-.linksHeader {
-  justify-content: flex-start;
-}
-
 .linksHeader p {
     font-size:20px;
     padding : 0 10px;
