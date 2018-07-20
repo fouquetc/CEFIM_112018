@@ -1,69 +1,69 @@
-// Cyril FOUQUET  - 13/07/2018
+// #region SLIDESHOW ANIMATION FUNCTIONS
 
-// BEGIN SLIDESHOW ANIMATION FUNCTIONS////////////////////////////////////////////////////////////////////
-// NEXT/PREVIOUS BUTTONS ACTIONS 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// THUMBNAILS MANAGEMENT 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-
-//SLIDESHOW RESIZE 
-function slideshowResize() {
-    let myNewHeight = $("#slideshowContentImg").width() * 2 / 3;
-    $("#slideshowContentImg").outerHeight(myNewHeight);
-    myNewHeight = $(".slideShowCol:first").width();
-    $(".slideshowRow").height(myNewHeight);
-}
-
-// SLIDESHOW CONTENT MANAGEMENT 
-function showSlides(n) {
-    let i;
-    let thumbnails = $(".slideshowThumbnail");
-    if (n > thumbnails.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = thumbnails.length }
-    for (i = 0; i < thumbnails.length; i++) {
-        thumbnails[i].className = thumbnails[i].className.replace(" active", "");
-    }
-    thumbnails[slideIndex - 1].className += " active";
-    myType = thumbnails[slideIndex - 1].parentNode.getAttribute('data-type')
-    $("#slideshowImgCategory").text(thumbnails[slideIndex - 1].parentNode.getAttribute('data-category'));
-    $("#imageDescription").text(thumbnails[slideIndex - 1].title);
-    // TOGGLE BETWEEN IMAGE, AUDIO AND VIDEO CONTENT
-    switch (myType) {
-        case "image":
-            $("#slideshowAudio").trigger("pause");
-            $("#slideshowVideo").attr("src", "");
-            $("#slideshowImg").attr("src", thumbnails[slideIndex - 1].src);
-            $("#slideshowAudio").hide();
-            $("#slideshowVideo").hide();
-
-            $("#slideshowImg").show();
-            break;
-        case "audio":
-            $("#slideshowVideo").attr("src", "");
-            $("#slideshowImg").attr("src", thumbnails[slideIndex - 1].src);
-            $("#slideshowAudio").attr("src", thumbnails[slideIndex - 1].getAttribute('data-audiosrc'));
-            $("#slideshowVideo").hide();
-            $("#slideshowImg").show();
-            $("#slideshowAudio").show();
-            break;
-        case "video":
-            $("#slideshowAudio").trigger("pause");
-            $("#slideshowVideo").attr("src", thumbnails[slideIndex - 1].getAttribute('data-videosrc'));
-            $("#slideshowImg").hide();
-            $("#slideshowAudio").hide();
-            $("#slideshowVideo").show();
-            break;
-        default:
+    // NEXT/PREVIOUS BUTTONS ACTIONS 
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
 
-}
-// MAIN
+    // THUMBNAILS MANAGEMENT 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    //SLIDESHOW RESIZE 
+    function slideshowResize() {
+        let myNewHeight = $("#slideshowContentImg").width() * 2 / 3;
+        $("#slideshowContentImg").outerHeight(myNewHeight);
+        myNewHeight = $(".slideShowCol:first").width();
+        $(".slideshowRow").height(myNewHeight);
+    }
+
+    // SLIDESHOW CONTENT MANAGEMENT 
+    function showSlides(n) {
+        let i;
+        let thumbnails = $(".slideshowThumbnail");
+        if (n > thumbnails.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = thumbnails.length }
+        for (i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+        }
+        thumbnails[slideIndex - 1].className += " active";
+        myType = thumbnails[slideIndex - 1].parentNode.getAttribute('data-type')
+        $("#slideshowImgCategory").text(thumbnails[slideIndex - 1].parentNode.getAttribute('data-category'));
+        $("#imageDescription").text(thumbnails[slideIndex - 1].title);
+        // TOGGLE BETWEEN IMAGE, AUDIO AND VIDEO CONTENT
+        switch (myType) {
+            case "image":
+                $("#slideshowAudio").trigger("pause");
+                $("#slideshowVideo").attr("src", "");
+                $("#slideshowImg").attr("src", thumbnails[slideIndex - 1].src);
+                $("#slideshowAudio").hide();
+                $("#slideshowVideo").hide();
+
+                $("#slideshowImg").show();
+                break;
+            case "audio":
+                $("#slideshowVideo").attr("src", "");
+                $("#slideshowImg").attr("src", thumbnails[slideIndex - 1].src);
+                $("#slideshowAudio").attr("src", thumbnails[slideIndex - 1].getAttribute('data-audiosrc'));
+                $("#slideshowVideo").hide();
+                $("#slideshowImg").show();
+                $("#slideshowAudio").show();
+                break;
+            case "video":
+                $("#slideshowAudio").trigger("pause");
+                $("#slideshowVideo").attr("src", thumbnails[slideIndex - 1].getAttribute('data-videosrc'));
+                $("#slideshowImg").hide();
+                $("#slideshowAudio").hide();
+                $("#slideshowVideo").show();
+                break;
+            default:
+        }
+
+    }
+// #endregion    
+
+// #region  document ready functions
 $(document).ready(function () {
 
     // RESIZING WINDOW 
@@ -167,3 +167,4 @@ $(document).ready(function () {
     showSlides(slideIndex);
     slideshowResize();
 });
+// #endregion
