@@ -498,8 +498,8 @@ nav {
     width:50%;
  }
 
-.linksHeader p {
-  justify-content: flex-end;
+.linksHeader {
+  justify-content: flex-start;
 }
 
 .linksHeader p {
